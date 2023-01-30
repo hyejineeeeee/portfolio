@@ -1,0 +1,492 @@
+@charset "utf-8";
+body {
+    font-family: "PlayfairDisplay", 돋움, sans-serif;
+    color: #000;
+    position: relative;
+}
+
+
+/* header */
+header {
+    position: fixed;
+    width: 100%; height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 9999;
+}
+header h1 {
+    width: 100px;
+    margin-left: 10px;
+    margin-right: auto;
+}
+header .Menu{
+    display: flex;
+}
+header .Menu a{
+    font-size: 1.8rem;
+    height: 80px;
+    padding: 0 20px;
+    font-weight: 500;
+}
+header .Menu li:nth-child(4) a{
+    padding-right: 44px;
+}
+
+
+/* main */
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+main .mainBackground {
+    position: absolute;
+}
+main .mainBackground_rh {
+    width: 1250px;
+    top: -28%; right: -17%;
+}
+main .mainBackground_lf {
+    width: 700px;
+    top: -32%; left: -20%;
+}
+main .main_fonts {
+    width: 1000px;
+    top: -54%; left: -32%;
+}
+main .main_star_playX {
+    top: 0; left: 0;
+
+}
+main h4 {
+    font-family: "양진체", 돋움, sans-serif;
+    font-size: 3rem;
+    color: #be94fd;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    position: absolute;
+    top: 45%; right: 5%;
+}
+main .mainTitle {
+    width: 700px; height: 208px;
+    position: absolute;
+    top: 55%; right: 3%;
+    color: #fff;
+    display: block;
+}
+main .mainTitle p {
+    font-size: 4.2rem;
+    font-family: "NotoSans", 돋움, sans-serif;
+    font-weight: 500;
+}
+main .mainTitle h2 {
+    text-align: center;
+    font-size: 4.2rem;
+    font-family: "양진체", 돋움, sans-serif;
+    color: #000;
+    float: left;
+}
+main .mainTitle h2:nth-child(1) {
+    color: #fff;
+}
+
+.mgRt {
+    margin-right: 5%;
+}
+.mgTop {
+    margin-top: 2%;
+}
+
+/* 움직이는 별 */
+.Art_star{
+    width: 100%;
+    height: 100vh;
+}
+.Art_star img{
+    width: 60px;
+}
+/* 오른쪽 아트 하단 흰색 별  */
+.Star1 {
+    position: absolute;
+    bottom: 5%; right: 35%;
+}
+/* 화살표 하단 블랙라인 별 */
+.Star2 {
+    position: absolute;
+    bottom: 10%; left: 8%;
+}
+/* 왼쪽 아트 흰색 별 */
+.Star3 {
+    position: absolute;
+    top: 10%; left: 14%;
+}
+/* 오른쪽 아트 흰색 다이아몬드 별 */
+.Star4 {
+    position: absolute;
+    top: 20%; right: 5%;
+}
+img.Star4 {
+    width: 100px;
+}
+/* 화살표 상단 블랙 별 */
+.Star5 {
+    position: absolute;
+    bottom: 32%; left: 20%;
+}
+img.Star5 {
+    width: 25px;
+}
+
+
+/* 포트폴리오 보기 화살표 */
+main .arrow {
+    bottom: 0%; left: 4%;
+    width: 400px; height: 424px;
+    background: url(../images/object/arrowBackground.png) no-repeat 50%/ cover;
+}
+main .arrow .arrowImg {
+    position: absolute;
+    width: 80px;
+    top: 68%; left: 40%;
+}
+main .arrow .viewTitle {
+    position: absolute;
+    top: 30%; left: 21%;
+}
+main .arrow .viewTitle h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+main .arrow .viewTitle h2 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+
+/* 포트폴리오 */
+.portfolio {
+    width: 100%; height: 100vh;
+    background-color: rgb(254, 198, 198);
+    color: #fff;
+    position: relative;
+}
+
+.portfolio_Title {
+    font-size: 8rem;
+    font-weight: 800;
+    transform: rotate(-90deg);
+
+    position: absolute;
+    bottom: 40%;
+}
+.portfolio_arrow {
+    position: absolute;
+    bottom: 10%; left: 11.8%;
+}
+.package {
+    background-color: rgb(195, 113, 113);
+}
+.Project_Img {
+    /* position: absolute;
+    top: 15%; right: 15%; */
+}
+img.Project_Img {
+    width: 1150px;
+    border-radius: 35px;
+}
+
+
+
+/* about-1 */
+.about {
+    width: 100%; height: 100vh;
+    background: url(../images/object/articleBackground-07.png) no-repeat 50%/ cover;
+    color: #000;
+    position: relative;
+}
+img.profileImg {
+    width: 450px;
+    border-radius: 250px 250px 0 0;
+    position: absolute;
+    bottom: 10%; right: 5%;
+}
+.about_mention {
+    position: absolute;
+    bottom: 28%; left: 30%;
+}
+.about_mention h2 {
+    font-family: "NotoSans", 돋움, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+
+    margin-top: 10%;
+    margin-bottom: 5%;
+    line-height: 1.5;
+}
+.about_mention p {
+    font-family: "NotoSans", 돋움, sans-serif;
+    font-size: 1.5rem;
+
+    line-height: 1.5;
+}
+.about_mention_bg {
+    width: 460px;
+    position: absolute;
+    bottom: 10%; left: 30%;
+
+    display: block;
+}
+.about_mention_bg h2 {
+    font-family: "NotoSans", 돋움, sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 2%;
+    margin-right: 2%;
+    float: left;
+}
+.about_mention_bg h2:nth-child(-n+2) {
+    margin-top: 0;
+}
+.about_mention_bg h2:nth-child(2n) {
+    margin-right: 0;
+}
+
+/* 움직이는 별 */
+img.aboutStar {
+    position: absolute;
+
+    width: 50px;
+}
+img.aboutStar_bkLine {
+    width: 37px;
+}
+.aboutStar_bkLine {
+    top: 51%; left: 50%;
+    transform: rotate(-60deg);
+}
+img.aboutStar_bkLine2 {
+    width: 31px;
+}
+.aboutStar_bkLine2 {
+    top: 48%; left: 28.9%;
+}
+
+img.aboutStar_bk {
+    width: 62px;
+}
+.aboutStar_bk {
+    top: 45%; left: 47.5%;
+}
+img.aboutStar_bk2 {
+    width: 60px;
+}
+.aboutStar_bk2 {
+    top: 50%; left: 25.5%;
+    transform: rotate(-110deg);
+    
+}
+
+/* about-2 */
+.portfolioSkils {
+    display: flex;
+
+    position: absolute;
+    bottom: 10%; right: 5%;
+
+
+}
+.portfolioSkill {
+    border: 3px solid #000;
+    border-left: none;
+}
+.portfolioSkill:nth-child(3) {
+    border-right: none;
+}
+.portfolioSkill h2 {
+    font-family: "NotoSans", 돋움, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+
+    text-align: center;
+    width: 378px; height: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    border-bottom: 3px solid #000;
+}
+.portfolioSkill h3 {
+    font-family: "NotoSans", 돋움, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    text-align: center;
+    width: 378px; height: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-bottom: 3px solid #000;
+}
+.portfolioSkill ul {
+    font-family: "NotoSans", 돋움, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    width: 378px; height: 355px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    list-style: disc;
+
+    line-height: 1.75;
+}
+.skillMg_Graphic {
+    margin-left: 25%;
+}
+.skillMg_Web {
+    margin-left: 12%;
+}
+.skillMg_Git {
+    margin-left: 17%;
+}
+
+/* about-3 */
+.portfolioPersonals {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    bottom: 10%; right: 5%;
+}
+.portfolioPersonal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    border-top: 3px solid #000;
+
+    
+    font-family: "NotoSans", 돋움, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.portfolioPersonal:nth-child(4) {
+    border-bottom: 3px solid #000;
+}
+.portfolioPersonal h2 {
+    padding-right: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.portfolioPersonal ul {
+    width: 835px;
+    line-height: 1.75;
+}
+/* .Basics {
+    padding: 25px 320px 25px 100px;
+}
+.Career {padding: 25px 320px 25px 100px;}
+.Certificate {padding: 25px 320px 25px 100px;}
+.Activity {padding: 25px 320px 25px 100px;} */
+
+
+
+/* contact */
+.contact {
+    background-color: transparent;
+    color: #000;
+}
+
+/* 폰트 그라디언트 */
+.PortfolioBox {
+    display: flex;
+    width: 100%; height: 20vh;
+}
+.contact .PortfolioText {
+    line-height: 20vh;
+    font-size: 4.8rem;
+
+    font-weight: 700;
+
+    background: linear-gradient(to right, #ff99ff,#d9b3ff, #b3ccff, #d966ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    display: block;
+}
+
+
+
+
+img.contact_Logo {
+    
+}
+.contact_Logo {
+    margin-right: auto;
+}
+.contactBackground {
+    background: url(../images/object/contactBackground-08.png) no-repeat 50%/ cover;
+
+    width: 100%; height: 80vh;
+
+    display: flex;
+    justify-content: flex-end;
+}
+.contactBackgroundFlex {
+    display: flex;
+}
+.contactBackground_Title {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10%; right: 5%;
+
+    font-size: 3rem;
+}
+.contactBackground_MainTitle {
+}
+.contactBackground_MainTitle h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+.contactBackground_MainTitle .contact_Menu {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contact_SubTitle {
+    display: flex;
+}
+
+
+/* footer */
+footer {
+    background-color: #000;
+    color: #fff;
+
+    width: 100%; height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer h3 {
+    font-size: 2rem;
+}
