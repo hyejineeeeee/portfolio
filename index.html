@@ -117,15 +117,15 @@
     <h1><a href="#"><img class="header_Logo" src="./common/images/logo/header-logo-bk.png" alt="main_Logo"></a></h1>
     <h1><a href="#"><img class="header_Logo2" src="./common/images/logo/header-logo.png" alt="logo2"></a></h1>
     <ul class="Menu">
-      <li><a href="#">Main</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li class="menu_Main text_doc"><a href="#Main">Main</a></li>
+      <li class="menu_Work text_doc"><a href="#Publishing">Work</a></li>
+      <li class="menu_About text_doc"><a href="#About">About</a></li>
+      <li class="menu_Contact text_doc"><a href="#Contact">Contact</a></li>
     </ul>
   </header>
 
 
-  <main class="page">
+  <main id="Main" class="page">
     <img class="mainBackground mainBackground_rh" src="./common/images/object/mainBackground-rh-2.png" alt="mainBackground-rh">
     <img class="mainBackground mainBackground_lf" src="./common/images/object/mainBackground-lf.png" alt="mainBackground-lf">
     <h4>안녕하세요!</h4>
@@ -151,10 +151,10 @@
       <img class="star Star5" src="./common/images/object/star5.png" alt="star">
     </div>
     <img class="mainBackground main_fonts" src="./common/images/object/main-fonts.png" alt="main-art-font">
-    <!-- <img class="mainBackground main_star_playX" src="./common/images/object/main-star(play-x).png" alt="main-star=plau-x"> -->
+    <img class="mainBackground main_star_playX" src="./common/images/object/main-star(play-x).png" alt="main-star=plau-x">
   </main>
 
-  <article class="portfolio publishing page">
+  <article id="Publishing" class="portfolio publishing page">
     <div class="portfolio_Project">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -195,13 +195,12 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-    <div class="portfolioTxt">
-      <p class="portfolio_subTitle">publishing</p>
-      <div class="TitleBox_Work">
-        <h2 class="portfolio_Title">Work</h2>
-        <img class="portfolio_arrow portfolio_arrowPF" src="./common/images/object/portfolioTitleWT.png" alt="portfolio_Title">
-      </div>
+    <!-- <div class="portfolioTxt"> -->
+    <div class="portfolioTxt TitleBox_Work">
+      <h2 class="portfolio_Title">Publishing</h2>
+      <img class="portfolio_arrow portfolio_arrowPF" src="./common/images/object/portfolioTitleWT.png" alt="portfolio_Title">
     </div>
+    <!-- </div> -->
   </article>
 
   <article class="portfolio package page">
@@ -250,7 +249,9 @@
     </div>
   </article>
 
-  <article class="portfolio web page">
+  <article class="portfolio web page"><div class="portfolioTitle">
+    <p class="portfolio_subTitle">Web</p>
+  </div>
     <div class="portfolio_Project">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -293,8 +294,8 @@
     </div>
   </article>
 
-  <article class="portfolio about page">
-    <div class="portfolioTitle">
+  <article id="About"  class="portfolio about page">
+    <div class="portfolioTitle TitleBox_About">
       <h2 class="portfolio_Title">About</h2>
       <img 
       class="portfolio_arrow" src="./common/images/object/portfolioTitle.png" alt="portfolio_Title">
@@ -305,10 +306,10 @@
       <p>어떤 작품일지라도 작품에 생기를 불어 넣어,<br>살아 숨 쉬는 디자인을 보여드리겠습니다!</p>
     </div>
     <div class="about_mention_bg">
-      <h2>#언변 능숙형-ENFJ</h2>
-      <h2>#소나무 같은 생존력</h2>
-      <h2>#빠른 결정력</h2>
-      <h2>#인간 골든 리트리버</h2>
+      <span><h2>#언변 능숙형-ENFJ</h2></span>
+      <span><h2>#소나무 같은 생존력</h2></span>
+      <span><h2>#빠른 결정력</h2></span>
+      <span><h2>#인간 골든 리트리버</h2></span>
     </div>
     <img class="profileImg" src="./common/images/object/IMG_.JPG" alt="img">
     <img class="aboutStar aboutStar_bkLine" src="./common/images/object/star2(black-line).png" alt="star">
@@ -325,7 +326,7 @@
     <div class="portfolioSkils">
       <div class="portfolioSkill skill_Graphic">
         <h2>그래픽 디자인<br>Tool</h2>
-        <h3>Photoshop/Illustrator<br>Pigma</h3>
+        <h3>Photoshop/Illustrator<br>Figma</h3>
         <ul class="skillMg_Graphic">
           <li>인물 사진 리터칭</li>
           <li>이미지 편집&디자인</li>
@@ -342,7 +343,7 @@
         <ul class="skillMg_Web">
           <li>웹사이트 구축 및 디자인</li>
           <li>미디어 쿼리를 이용한 반응형 웹 제작</li>
-          <li>다양한 플러그인 및 AIP를 활용</li>
+          <li>다양한 플러그인 및 API를 활용</li>
           <li>웹 접근성과 웹 표준화에 맞춘 콘텐츠 제작</li>
           <li>Css3 flex&grid&position을 활용한<br>웹 레이아웃 구성</li>
           <li>자바스크립트 함수프로그래밍을 통해<br>동적인 이벤트 및 애니메이션 구현</li>
@@ -351,7 +352,7 @@
       </div>
       <div class="portfolioSkill skill_Git">
         <h2>로컬 저장소 관리<br>Tool</h2>
-        <h3>Git/GitHubSlack</h3>
+        <h3>Git/GitHub</h3>
         <ul class="skillMg_Git">
           <li>Git명령어 활용</li>
           <li>형상관리 시스템을 통한 버전 관리</li>
@@ -408,7 +409,7 @@
     </div>
   </article>
 
-  <article class="portfolio contact page">
+  <article id="Contact" class="portfolio contact page">
     <div class="PortfolioBox">
       <p class="PortfolioText">LeeHyeJin’s Portfolio.</p>
       <p class="PortfolioText">Thank you for everything.</p>
@@ -438,9 +439,9 @@
           </div>
         </div>
         <div class="scrollTo">
-          <a href=""><span class="material-symbols-outlined">
+          <span class="material-symbols-outlined">
             arrow_circle_up
-            </span></a>
+            </span>
           <p>Scroll To Top</p>
         </div>
     </div>
