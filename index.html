@@ -1,86 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- og -->
-  <meta property="og:title" content="knotters">
-  <meta property="og:url" content="#">
-  <meta property="og:image" content="/res/image/img_og.png">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="Ezen suwon B2O2">
-  <meta property="og:site_name" content="knotters homepage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- og -->
+    <meta property="og:title" content="knotters" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="/res/image/img_og.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Ezen suwon B2O2" />
+    <meta property="og:site_name" content="knotters homepage" />
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./common/images/logo/favicon.png">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./common/images/logo/favicon.png" />
 
-  <!-- scroll To 아이콘 -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
+    <!-- scroll To 아이콘 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0"
+    />
 
-  <title>portfolio</title>
+    <title>portfolio</title>
 
-  <!-- reset -->
-  <link rel="stylesheet" href="./common/minireset.min.css">
-  <!-- font-->
-  <link rel="stylesheet" href="./common/fonts/font.css">
-   <!-- style.css -->
-   <link rel="stylesheet" href="./common/style/index_style.css">
-   <!-- js -->
-   <script defer src="./common/style/index.js"></script>
-   <!-- Link Swiper's CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-  <!-- jQuery-->
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
- 
-   <!-- Demo styles -->
-   <style>
-    html,
-    body {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
+    <!-- reset -->
+    <link rel="stylesheet" href="./common/minireset.min.css" />
+    <!-- font-->
+    <link rel="stylesheet" href="./common/fonts/font.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./common/style/index_style.css" />
 
-    .swiper {
-      width: 75%;
-      height: 100%;
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+    <!-- js -->
+    <script defer src="./common/style/index.js"></script>
 
-      position: absolute;
-      top: 2%; right: 0;
-    }
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
+      .swiper {
+        width: 75%;
+        height: 100%;
 
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
+        position: absolute;
+        top: 2%;
+        right: 0;
+        cursor: pointer;
+      }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .swiper-slide {
-      width: 75%;
-    }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
 
-    /* .swiper-slide:nth-child(2n) {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-slide {
+        width: 75%;
+      }
+
+      /* .swiper-slide:nth-child(2n) {
       width: 10%;
     }
 
@@ -88,396 +97,561 @@
       width: 40%;
     } */
 
-    
-    .swiper-pagination-bullet {
-    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,12px));
-    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,12px));
-    display: inline-block;
-    border-radius: 50%;
-    background: var(--swiper-pagination-bullet-inactive-color,#F593E7);
-    }
-    :root {
-    --swiper-navigation-size: 200px;
-    }
-    :root {
-        --swiper-theme-color: #F593E7;
-    }
-    .swiper-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-    position: absolute;
-    bottom: 6%;
-    left: 35%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-}
-   </style>
+      .swiper-pagination-bullet {
+        width: var(
+          --swiper-pagination-bullet-width,
+          var(--swiper-pagination-bullet-size, 12px)
+        );
+        height: var(
+          --swiper-pagination-bullet-height,
+          var(--swiper-pagination-bullet-size, 12px)
+        );
+        display: inline-block;
+        border-radius: 50%;
+        background: var(--swiper-pagination-bullet-inactive-color, #f593e7);
+      }
+      :root {
+        --swiper-navigation-size: 200px;
+      }
+      :root {
+        --swiper-theme-color: #f593e7;
+      }
+      .swiper-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+      .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+        position: absolute;
+        bottom: 6%;
+        left: 35%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a onClick="window.location.reload()" href="#Main"
+          ><img
+            class="header_Logo"
+            src="./common/images/logo/header-logo-bk.png"
+            alt="main_Logo"
+        /></a>
+      </h1>
+      <h1>
+        <img
+          class="header_Logo2"
+          src="./common/images/logo/header-logo.png"
+          alt="logo2"
+        />
+      </h1>
+      <ul class="Menu">
+        <li class="menu_Main text_doc"><a href="#Main">Main</a></li>
+        <li class="menu_Work text_doc"><a href="#Publishing">Work</a></li>
+        <li class="menu_About text_doc"><a href="#About">About</a></li>
+        <li class="menu_Contact text_doc"><a href="#Contact">Contact</a></li>
+      </ul>
+    </header>
 
-</head>
-<body>
-  <header>
-    <h1><a href="#"><img class="header_Logo" src="./common/images/logo/header-logo-bk.png" alt="main_Logo"></a></h1>
-    <h1><a href="#"><img class="header_Logo2" src="./common/images/logo/header-logo.png" alt="logo2"></a></h1>
-    <ul class="Menu">
-      <li class="menu_Main text_doc"><a href="#Main">Main</a></li>
-      <li class="menu_Work text_doc"><a href="#Publishing">Work</a></li>
-      <li class="menu_About text_doc"><a href="#About">About</a></li>
-      <li class="menu_Contact text_doc"><a href="#Contact">Contact</a></li>
-    </ul>
-  </header>
-
-
-  <main id="Main" class="page">
-    <img class="mainBackground mainBackground_rh" src="./common/images/object/mainBackground-rh-2.png" alt="mainBackground-rh">
-    <img class="mainBackground mainBackground_lf" src="./common/images/object/mainBackground-lf.png" alt="mainBackground-lf">
-    <h4>안녕하세요!</h4>
-    <img class="fontStar" src="./common/images/object/main-fontStar.png" alt="fontStar">
-    <div class="mainBackground mainTitle">
-      <h2 class="mgTop mgRt size_fall">생기</h2>
-      <p>를 불어넣는</p>
-      <h2 class="mgTop mgRt">디자이너 이혜진</h2>
-      <p>입니다.</p>
-    </div>
-    <div class="mainBackground arrow">
-      <div class="viewTitle">
-        <h3>view my</h3>
-        <h2>Portfolio</h2>
+    <main id="Main" class="page">
+      <img
+        class="mainBackground mainBackground_rh"
+        src="./common/images/object/mainBackground-rh-2.png"
+        alt="mainBackground-rh"
+      />
+      <img
+        class="mainBackground mainBackground_lf"
+        src="./common/images/object/mainBackground-lf.png"
+        alt="mainBackground-lf"
+      />
+      <h4>안녕하세요!</h4>
+      <img
+        class="fontStar"
+        src="./common/images/object/main-fontStar.png"
+        alt="fontStar"
+      />
+      <div class="mainBackground mainTitle">
+        <h2 class="mgTop mgRt size_fall">생기</h2>
+        <p>를 불어넣는</p>
+        <h2 class="mgTop mgRt">디자이너 이혜진</h2>
+        <p>입니다.</p>
       </div>
-      <img class="arrowImg" src="./common/images/object/arrow.png" alt="arrow">
-    </div>
-    <div class="mainBackground Art_star">
-      <img class="star Star1" src="./common/images/object/star1.png" alt="star">
-      <img class="star Star2" src="./common/images/object/star2(black-line).png" alt="star">
-      <img class="star Star3" src="./common/images/object/star3.png" alt="star">
-      <img class="star Star4" src="./common/images/object/star4.png" alt="star">
-      <img class="star Star5" src="./common/images/object/star5.png" alt="star">
-    </div>
-    <img class="mainBackground main_fonts" src="./common/images/object/main-fonts.png" alt="main-art-font">
-    <img class="mainBackground main_star_playX" src="./common/images/object/main-star(play-x).png" alt="main-star=plau-x">
-  </main>
-
-  <article id="Publishing" class="portfolio publishing page">
-    <div class="portfolio_Project">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slide_title">
-              <p class="projectDate">2022-11</p>
-              <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
-              <p class="projectName_Kr">노터 웹퍼블리싱</p>
-              <div class="projectItmBox">
-                <p class="projectItm">#팀작업</p><p class="projectItm">#UI/UX</p><p class="projectItm">#JAVASCRIPT</p>
-              </div>
-            </div>
-            <a href="#"><img class="Project_Img" src="./project/project1/img_main_intro.jpg" alt="project1"></a>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide_title">
-              <p class="projectDate">2022-11</p>
-              <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
-              <p class="projectName_Kr">노터 웹퍼블리싱</p>
-              <div class="projectItmBox">
-                <p class="projectItm">#팀작업</p><p class="projectItm">#UI/UX</p><p class="projectItm">#JAVASCRIPT</p>
-              </div>
-            </div>
-            <a href="#"><img class="Project_Img" src="./project/project1/img_main_intro.jpg" alt="project1"></a>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide_title">
-              <p class="projectDate">2022-11</p>
-              <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
-              <p class="projectName_Kr">노터 웹퍼블리싱</p>
-              <div class="projectItmBox">
-                <p class="projectItm">#팀작업</p><p class="projectItm">#UI/UX</p><p class="projectItm">#JAVASCRIPT</p>
-              </div>
-            </div>
-            <a href="#"><img class="Project_Img" src="./project/project1/img_main_intro.jpg" alt="project1"></a>
-          </div>
+      <div class="mainBackground arrow">
+        <div class="viewTitle">
+          <h3>view my</h3>
+          <h2>Portfolio</h2>
         </div>
-        <div class="swiper-pagination"></div>
+        <img
+          class="arrowImg"
+          src="./common/images/object/arrow.png"
+          alt="arrow"
+        />
       </div>
-    </div>
-    <!-- <div class="portfolioTxt"> -->
-    <div class="portfolioTxt TitleBox_Work">
-      <h2 class="portfolio_Title">Publishing</h2>
-      <img class="portfolio_arrow portfolio_arrowPF" src="./common/images/object/portfolioTitleWT.png" alt="portfolio_Title">
-    </div>
-    <!-- </div> -->
-  </article>
+      <div class="mainBackground Art_star">
+        <img
+          class="star Star1"
+          src="./common/images/object/star1.png"
+          alt="star"
+        />
+        <img
+          class="star Star2"
+          src="./common/images/object/star2(black-line).png"
+          alt="star"
+        />
+        <img
+          class="star Star3"
+          src="./common/images/object/star3.png"
+          alt="star"
+        />
+        <img
+          class="star Star4"
+          src="./common/images/object/star4.png"
+          alt="star"
+        />
+        <img
+          class="star Star5"
+          src="./common/images/object/star5.png"
+          alt="star"
+        />
+      </div>
+      <img
+        class="mainBackground main_fonts"
+        src="./common/images/object/main-fonts.png"
+        alt="main-art-font"
+      />
+      <img
+        class="mainBackground main_star_playX"
+        src="./common/images/object/main-star(play-x).png"
+        alt="main-star=plau-x"
+      />
+    </main>
 
-  <article class="portfolio package page">
-    <div class="portfolioTitle">
-      <p class="portfolio_subTitle">package</p>
-    </div>
-    <div class="portfolio_Project">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slide_title">
-              <p class="projectDate">2022-11</p>
-              <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
-              <p class="projectName_Kr">노터 웹퍼블리싱</p>
-              <div class="projectItmBox">
-                <p class="projectItm">#팀작업</p><p class="projectItm">#UI/UX</p><p class="projectItm">#JAVASCRIPT</p>
+    <article id="Publishing" class="portfolio publishing page">
+      <div class="portfolio_Project">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <p class="projectDate">2022-11</p>
+                <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
+                <p class="projectName_Kr">노터 웹퍼블리싱</p>
+                <div class="projectItmBox">
+                  <p class="projectItm">#팀작업</p>
+                  <p class="projectItm">#UI/UX</p>
+                  <p class="projectItm">#JAVASCRIPT</p>
+                </div>
               </div>
+              <a href="#"
+                ><img
+                  class="Project_Img"
+                  src="./project/project1/img_main_intro.jpg"
+                  alt="project1"
+              /></a>
             </div>
-            <a href="#"><img class="Project_Img" src="./project/project1/img_main_intro.jpg" alt="project1"></a>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide_title">
-              <p class="projectDate">2022-11</p>
-              <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
-              <p class="projectName_Kr">노터 웹퍼블리싱</p>
-              <div class="projectItmBox">
-                <p class="projectItm">#팀작업</p><p class="projectItm">#UI/UX</p><p class="projectItm">#JAVASCRIPT</p>
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <p class="projectDate">2022-11</p>
+                <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
+                <p class="projectName_Kr">노터 웹퍼블리싱</p>
+                <div class="projectItmBox">
+                  <p class="projectItm">#팀작업</p>
+                  <p class="projectItm">#UI/UX</p>
+                  <p class="projectItm">#JAVASCRIPT</p>
+                </div>
               </div>
+              <a href="#"
+                ><img
+                  class="Project_Img"
+                  src="./project/project1/img_main_intro.jpg"
+                  alt="project1"
+              /></a>
             </div>
-            <a href="#"><img class="Project_Img" src="./project/project1/img_main_intro.jpg" alt="project1"></a>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide_title">
-              <p class="projectDate">2022-11</p>
-              <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
-              <p class="projectName_Kr">노터 웹퍼블리싱</p>
-              <div class="projectItmBox">
-                <p class="projectItm">#팀작업</p><p class="projectItm">#UI/UX</p><p class="projectItm">#JAVASCRIPT</p>
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <p class="projectDate">2022-11</p>
+                <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
+                <p class="projectName_Kr">노터 웹퍼블리싱</p>
+                <div class="projectItmBox">
+                  <p class="projectItm">#팀작업</p>
+                  <p class="projectItm">#UI/UX</p>
+                  <p class="projectItm">#JAVASCRIPT</p>
+                </div>
               </div>
+              <a href="#"
+                ><img
+                  class="Project_Img"
+                  src="./project/project1/img_main_intro.jpg"
+                  alt="project1"
+              /></a>
             </div>
-            <a href="#"><img class="Project_Img" src="./project/project1/img_main_intro.jpg" alt="project1"></a>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
-    </div>
-  </article>
+      <!-- <div class="portfolioTxt"> -->
+      <div class="portfolioTxt TitleBox_Pub">
+        <h2 class="portfolio_Title publishingTitle">Publishing</h2>
+        <img
+          class="portfolio_arrowPF"
+          src="./common/images/object/portfolioTitleWT.png"
+          alt="portfolio_Title"
+        />
+      </div>
+      <!-- </div> -->
+    </article>
 
-  <article class="portfolio web page"><div class="portfolioTitle">
-    <p class="portfolio_subTitle">Web</p>
-  </div>
-    <div class="portfolio_Project">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slide_title">
-              <p class="projectDate">2022-11</p>
-              <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
-              <p class="projectName_Kr">노터 웹퍼블리싱</p>
-              <div class="projectItmBox">
-                <p class="projectItm">#팀작업</p><p class="projectItm">#UI/UX</p><p class="projectItm">#JAVASCRIPT</p>
+    <article class="portfolio package page">
+      <div class="portfolio_Project">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <p class="projectDate">2022-11</p>
+                <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
+                <p class="projectName_Kr">노터 웹퍼블리싱</p>
+                <div class="projectItmBox">
+                  <p class="projectItm">#팀작업</p>
+                  <p class="projectItm">#UI/UX</p>
+                  <p class="projectItm">#JAVASCRIPT</p>
+                </div>
               </div>
+              <a href="#"
+                ><img
+                  class="Project_Img"
+                  src="./project/project1/img_main_intro.jpg"
+                  alt="project1"
+              /></a>
             </div>
-            <a href="#"><img class="Project_Img" src="./project/project1/img_main_intro.jpg" alt="project1"></a>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide_title">
-              <p class="projectDate">2022-11</p>
-              <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
-              <p class="projectName_Kr">노터 웹퍼블리싱</p>
-              <div class="projectItmBox">
-                <p class="projectItm">#팀작업</p><p class="projectItm">#UI/UX</p><p class="projectItm">#JAVASCRIPT</p>
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <p class="projectDate">2022-11</p>
+                <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
+                <p class="projectName_Kr">노터 웹퍼블리싱</p>
+                <div class="projectItmBox">
+                  <p class="projectItm">#팀작업</p>
+                  <p class="projectItm">#UI/UX</p>
+                  <p class="projectItm">#JAVASCRIPT</p>
+                </div>
               </div>
+              <a href="#"
+                ><img
+                  class="Project_Img"
+                  src="./project/project1/img_main_intro.jpg"
+                  alt="project1"
+              /></a>
             </div>
-            <a href="#"><img class="Project_Img" src="./project/project1/img_main_intro.jpg" alt="project1"></a>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide_title">
-              <p class="projectDate">2022-11</p>
-              <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
-              <p class="projectName_Kr">노터 웹퍼블리싱</p>
-              <div class="projectItmBox">
-                <p class="projectItm">#팀작업</p><p class="projectItm">#UI/UX</p><p class="projectItm">#JAVASCRIPT</p>
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <p class="projectDate">2022-11</p>
+                <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
+                <p class="projectName_Kr">노터 웹퍼블리싱</p>
+                <div class="projectItmBox">
+                  <p class="projectItm">#팀작업</p>
+                  <p class="projectItm">#UI/UX</p>
+                  <p class="projectItm">#JAVASCRIPT</p>
+                </div>
               </div>
+              <a href="#"
+                ><img
+                  class="Project_Img"
+                  src="./project/project1/img_main_intro.jpg"
+                  alt="project1"
+              /></a>
             </div>
-            <a href="#"><img class="Project_Img" src="./project/project1/img_main_intro.jpg" alt="project1"></a>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
-    </div>
-  </article>
+      <div class="portfolioTxt TitleBox_Package">
+        <h2 class="portfolio_Title packageTitle">Package</h2>
+        <img
+          class="portfolio_arrowPF"
+          src="./common/images/object/portfolioTitleWT.png"
+          alt="portfolio_Title"
+        />
+      </div>
+    </article>
 
-  <article id="About"  class="portfolio about page">
-    <div class="portfolioTitle TitleBox_About">
-      <h2 class="portfolio_Title">About</h2>
-      <img 
-      class="portfolio_arrow" src="./common/images/object/portfolioTitle.png" alt="portfolio_Title">
-    </div>
-    <div class="about_mention">
-      <p>안녕하세요-!</p>
-      <h2>작품에 생기를 불어넣는<br>디자이너 이혜진 입니다!</h2>
-      <p>어떤 작품일지라도 작품에 생기를 불어 넣어,<br>살아 숨 쉬는 디자인을 보여드리겠습니다!</p>
-    </div>
-    <div class="about_mention_bg">
-      <span><h2>#언변 능숙형-ENFJ</h2></span>
-      <span><h2>#소나무 같은 생존력</h2></span>
-      <span><h2>#빠른 결정력</h2></span>
-      <span><h2>#인간 골든 리트리버</h2></span>
-    </div>
-    <img class="profileImg" src="./common/images/object/IMG_.JPG" alt="img">
-    <img class="aboutStar aboutStar_bkLine" src="./common/images/object/star2(black-line).png" alt="star">
-    <img class="aboutStar aboutStar_bkLine2" src="./common/images/object/star2(black-line).png" alt="star">
-    <img class="aboutStar aboutStar_bk" src="./common/images/object/star5.png" alt="star">
-    <img class="aboutStar aboutStar_bk2" src="./common/images/object/star5.png" alt="star">
-  </article>
+    <article class="portfolio web page">
+      <div class="portfolio_Project">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <p class="projectDate">2022-11</p>
+                <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
+                <p class="projectName_Kr">노터 웹퍼블리싱</p>
+                <div class="projectItmBox">
+                  <p class="projectItm">#팀작업</p>
+                  <p class="projectItm">#UI/UX</p>
+                  <p class="projectItm">#JAVASCRIPT</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  class="Project_Img"
+                  src="./project/project1/img_main_intro.jpg"
+                  alt="project1"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <p class="projectDate">2022-11</p>
+                <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
+                <p class="projectName_Kr">노터 웹퍼블리싱</p>
+                <div class="projectItmBox">
+                  <p class="projectItm">#팀작업</p>
+                  <p class="projectItm">#UI/UX</p>
+                  <p class="projectItm">#JAVASCRIPT</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  class="Project_Img"
+                  src="./project/project1/img_main_intro.jpg"
+                  alt="project1"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_title">
+                <p class="projectDate">2022-11</p>
+                <p class="projectName_En">KNOTTERS WEB PUBLISHING</p>
+                <p class="projectName_Kr">노터 웹퍼블리싱</p>
+                <div class="projectItmBox">
+                  <p class="projectItm">#팀작업</p>
+                  <p class="projectItm">#UI/UX</p>
+                  <p class="projectItm">#JAVASCRIPT</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  class="Project_Img"
+                  src="./project/project1/img_main_intro.jpg"
+                  alt="project1"
+              /></a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="portfolioTxt TitleBox_Web">
+        <h2 class="portfolio_Title webTitle">Web</h2>
+        <img
+          class="portfolio_arrowPF"
+          src="./common/images/object/portfolioTitleWT.png"
+          alt="portfolio_Title"
+        />
+      </div>
+    </article>
 
-  <article class="portfolio about">
-    <div class="portfolioTitle">
-      <h2 class="portfolio_Title">About</h2>
-      <img class="portfolio_arrow" src="./common/images/object/portfolioTitle.png" alt="portfolio_Title">
-    </div>
-    <div class="portfolioSkils">
-      <div class="portfolioSkill skill_Graphic">
-        <h2>그래픽 디자인<br>Tool</h2>
-        <h3>Photoshop/Illustrator<br>Figma</h3>
-        <ul class="skillMg_Graphic">
-          <li>인물 사진 리터칭</li>
-          <li>이미지 편집&디자인</li>
-          <li>아이콘 및 일러스트 제작</li>
-          <li>박스 전개도 칼선 활용</li>
-          <li>UI/UX 프로토타입 제작</li>
-          <li>UI/UX 콘텐츠 소스 제작</li>
-          <li>UI/UX 와이어프레임 제작</li>
-        </ul>
+    <article id="About" class="portfolio about page">
+      <div class="portfolioTxt TitleBox_About">
+        <h2 class="portfolio_Title aboutTitle">About</h2>
+        <img
+          class="portfolio_arrow"
+          src="./common/images/object/portfolioTitle.png"
+          alt="portfolio_Title"
+        />
       </div>
-      <div class="portfolioSkill skill_Web">
-        <h2>웹 퍼블리싱<br>Tool</h2>
-        <h3>Html5/Css3<br>JavaScript/React</h3>
-        <ul class="skillMg_Web">
-          <li>웹사이트 구축 및 디자인</li>
-          <li>미디어 쿼리를 이용한 반응형 웹 제작</li>
-          <li>다양한 플러그인 및 API를 활용</li>
-          <li>웹 접근성과 웹 표준화에 맞춘 콘텐츠 제작</li>
-          <li>Css3 flex&grid&position을 활용한<br>웹 레이아웃 구성</li>
-          <li>자바스크립트 함수프로그래밍을 통해<br>동적인 이벤트 및 애니메이션 구현</li>
-          <li>React 컴포넌트/useState/useEeffect를<br>이용한 UI 제작</li>
-        </ul>
+      <div class="about_mention">
+        <p>안녕하세요-!</p>
+        <h2>작품에 생기를 불어넣는<br />디자이너 이혜진 입니다!</h2>
+        <p>
+          어떤 작품일지라도 작품에 생기를 불어 넣어,<br />살아 숨 쉬는 디자인을
+          보여드리겠습니다!
+        </p>
       </div>
-      <div class="portfolioSkill skill_Git">
-        <h2>로컬 저장소 관리<br>Tool</h2>
-        <h3>Git/GitHub</h3>
-        <ul class="skillMg_Git">
-          <li>Git명령어 활용</li>
-          <li>형상관리 시스템을 통한 버전 관리</li>
-          <li>GitHub를 통해 프로젝트 공유 및 협업</li>
-          <li>프로젝트 진행사항 실시간 수정 및 공유</li>
-        </ul>
+      <div class="about_mention_bg">
+        <span><h2>#언변 능숙형-ENFJ</h2></span>
+        <span><h2>#소나무 같은 생존력</h2></span>
+        <span><h2>#빠른 결정력</h2></span>
+        <span><h2>#인간 골든 리트리버</h2></span>
       </div>
-    </div>
-  </article>
+      <img class="profileImg" src="./common/images/object/IMG_.JPG" alt="img" />
+      <img
+        class="aboutStar aboutStar_bkLine"
+        src="./common/images/object/star2(black-line).png"
+        alt="star"
+      />
+      <img
+        class="aboutStar aboutStar_bkLine2"
+        src="./common/images/object/star2(black-line).png"
+        alt="star"
+      />
+      <img
+        class="aboutStar aboutStar_bk"
+        src="./common/images/object/star5.png"
+        alt="star"
+      />
+      <img
+        class="aboutStar aboutStar_bk2"
+        src="./common/images/object/star5.png"
+        alt="star"
+      />
+    </article>
 
-  <article class="portfolio about page">
-    <div class="portfolioTitle">
-      <h2 class="portfolio_Title">About</h2>
-      <img class="portfolio_arrow" src="./common/images/object/portfolioTitle.png" alt="portfolio_Title">
-    </div>
-    <div class="portfolioPersonals">
-      <div class="portfolioPersonal Basics">
-        <h2>기본 정보</h2>
-        <ul>
-          <li>1997.06.09</li>
-          <li>경기도 안성시 거주</li>
-          <li>건양대학교 시각디자인 전공</li>
-          <li>1717gpwls@naver.com</li>
-        </ul>
+    <article class="portfolio about">
+      <div class="portfolioSkils">
+        <div class="portfolioSkill skill_Graphic">
+          <h2>그래픽 디자인<br />Tool</h2>
+          <h3>Photoshop/Illustrator<br />Figma</h3>
+          <ul class="skillMg_Graphic">
+            <li>인물 사진 리터칭</li>
+            <li>이미지 편집&디자인</li>
+            <li>아이콘 및 일러스트 제작</li>
+            <li>박스 전개도 칼선 활용</li>
+            <li>UI/UX 프로토타입 제작</li>
+            <li>UI/UX 콘텐츠 소스 제작</li>
+            <li>UI/UX 와이어프레임 제작</li>
+          </ul>
+        </div>
+        <div class="portfolioSkill skill_Web">
+          <h2>웹 퍼블리싱<br />Tool</h2>
+          <h3>Html5/Css3<br />JavaScript/React</h3>
+          <ul class="skillMg_Web">
+            <li>웹사이트 구축 및 디자인</li>
+            <li>미디어 쿼리를 이용한 반응형 웹 제작</li>
+            <li>다양한 플러그인 및 API를 활용</li>
+            <li>웹 접근성과 웹 표준화에 맞춘 콘텐츠 제작</li>
+            <li>Css3 flex&grid&position을 활용한<br />웹 레이아웃 구성</li>
+            <li>
+              자바스크립트 함수프로그래밍을 통해<br />동적인 이벤트 및
+              애니메이션 구현
+            </li>
+            <li>React 컴포넌트/useState/useEeffect를<br />이용한 UI 제작</li>
+          </ul>
+        </div>
+        <div class="portfolioSkill skill_Git">
+          <h2>로컬 저장소 관리<br />Tool</h2>
+          <h3>Git/GitHub</h3>
+          <ul class="skillMg_Git">
+            <li>Git명령어 활용</li>
+            <li>형상관리 시스템을 통한 버전 관리</li>
+            <li>GitHub를 통해 프로젝트 공유 및 협업</li>
+            <li>프로젝트 진행사항 실시간 수정 및 공유</li>
+          </ul>
+        </div>
       </div>
-      <div class="portfolioPersonal Career">
-        <h2>경력</h2>
-        <ul>
-          <li>2020.03 ~ 2021.12:뷰티브랜드 디자인팀 근무(총1년10개월)</li>
-          <li>2022.03 ~ 2022.07:뷰티브랜드 디자인팀 근무(총5개월)</li>
-        </ul>
-      </div>
-      <div class="portfolioPersonal Certificate">
-        <h2>자격증</h2>
-        <ul>
-          <li>2017.11.30: ACA포토샵(Adobe Certified Associate Photoshop)</li>
-          <li>2019.11.14: ACA일러스트((Adobe Certified Associate Illustrator)</li>
-          <li>2017.12.24: MOS파워포인트</li>
-          <li>2017.12.24: MOS엑셀</li>
-          <li>2022.08.29: 자동차운전면허증 2종보통</li>
-        </ul>
-      </div>
-      <div class="portfolioPersonal Activity">
-        <h2>대외활동</h2>
-        <ul>
-          <li>2019.09 ~ 2019.09.11: 건양대학교 시각디자인학과 도록 디자인 팀장</li>
-          <li>2019.09: 데마셀 패키지 디자인 참여</li>
-          <li>2019.02 ~ 2019.11: 건양대학교 시각디자인학과 졸업위원회</li>
-          <li>2021.10: 포코어커피 디자인 참여</li>
-          <li>2022.01 ~ 2022.02: 네오게임즈 홍보물 제작 참여</li>
-          <li>2022.09 ~ 2023.02: 웹퍼블리셔 UI/UX 프론트엔드 과정 수료</li>
-        </ul>
-      </div>
-    </div>
-  </article>
+    </article>
 
-  <article id="Contact" class="portfolio contact page">
-    <div class="PortfolioBox">
-      <p class="PortfolioText">LeeHyeJin’s Portfolio.</p>
-      <p class="PortfolioText">Thank you for everything.</p>
-    </div>
-    <div class="contactBackground">
-      <img class="contact_Logo" src="./common/images/object/contactLogo.png" alt="contactLogo">
+    <article class="portfolio about page">
+      <div class="portfolioPersonals">
+        <div class="portfolioPersonal Basics">
+          <h2>기본 정보</h2>
+          <ul>
+            <li>1997.06.09</li>
+            <li>경기도 안성시 거주</li>
+            <li>건양대학교 시각디자인 전공</li>
+            <li>1717gpwls@naver.com</li>
+          </ul>
+        </div>
+        <div class="portfolioPersonal Career">
+          <h2>경력</h2>
+          <ul>
+            <li>2020.03 ~ 2021.12:뷰티브랜드 디자인팀 근무(총1년10개월)</li>
+            <li>2022.03 ~ 2022.07:뷰티브랜드 디자인팀 근무(총5개월)</li>
+          </ul>
+        </div>
+        <div class="portfolioPersonal Certificate">
+          <h2>자격증</h2>
+          <ul>
+            <li>2017.11.30: ACA포토샵(Adobe Certified Associate Photoshop)</li>
+            <li>
+              2019.11.14: ACA일러스트((Adobe Certified Associate Illustrator)
+            </li>
+            <li>2017.12.24: MOS파워포인트</li>
+            <li>2017.12.24: MOS엑셀</li>
+            <li>2022.08.29: 자동차운전면허증 2종보통</li>
+          </ul>
+        </div>
+        <div class="portfolioPersonal Activity">
+          <h2>대외활동</h2>
+          <ul>
+            <li>
+              2019.09 ~ 2019.09.11: 건양대학교 시각디자인학과 도록 디자인 팀장
+            </li>
+            <li>2019.09: 데마셀 패키지 디자인 참여</li>
+            <li>2019.02 ~ 2019.11: 건양대학교 시각디자인학과 졸업위원회</li>
+            <li>2021.10: 포코어커피 디자인 참여</li>
+            <li>2022.01 ~ 2022.02: 네오게임즈 홍보물 제작 참여</li>
+            <li>2022.09 ~ 2023.02: 웹퍼블리셔 UI/UX 프론트엔드 과정 수료</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article id="Contact" class="portfolio contact page">
+      <div class="flow-container">
+        <div class="PortfolioBox">
+          <p class="PortfolioText">
+            &nbsp;LeeHyeJin’s Portfolio.&nbsp;Thank you for
+            everything.&nbsp;LeeHyeJin’s Portfolio.&nbsp;Thank you for
+            everything.&nbsp;LeeHyeJin’s Portfolio.&nbsp;Thank you for
+            everything.
+          </p>
+          <!-- <p class="PortfolioText">Thank you for everything.</p>
+          <p class="PortfolioText">LeeHyeJin’s Portfolio.</p>
+          <p class="PortfolioText">Thank you for everything.</p> -->
+        </div>
+      </div>
+      <div class="contactBackground">
+        <img
+          class="contact_Logo"
+          src="./common/images/object/contactLogo.png"
+          alt="contactLogo"
+        />
         <div class="contactBackgroundFlex contactBackground_MainTitle">
           <h2>Contact</h2>
           <ul class="contactBackgroundFlex contact_Menu">
-            <li><a href="#">Main</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#Main">Main</a></li>
+            <li><a href="#Publishing">Work</a></li>
+            <li><a href="#About">About</a></li>
           </ul>
         </div>
         <div class="contactBackground_SubTitle">
           <div class="contact_SubTitle Name">
             <h3>Name</h3>
-            <p>LEEHYEJIN</p>
+            <p class="text_doc_Contact">LEEHYEJIN</p>
           </div>
           <div class="contact_SubTitle Email">
             <h3>Email</h3>
-            <p>1717gpwls@naver.com</p>
+            <p class="text_doc_Contact">1717gpwls@naver.com</p>
           </div>
           <div class="contact_SubTitle Design">
             <h3>Design</h3>
-            <p>UI/UX, PACKAGE, PUBLISHING</p>
+            <p class="text_doc_Contact">UI/UX, PACKAGE, PUBLISHING</p>
           </div>
         </div>
         <div class="scrollTo">
-          <span class="material-symbols-outlined">
-            arrow_circle_up
-            </span>
+          <span class="material-symbols-outlined"> arrow_circle_up </span>
           <p>Scroll To Top</p>
         </div>
-    </div>
-  </article>
-
-
-
-  <footer>
-    <div class="footerTitle">
-      <div class="footerMain_font">
-        <h3>LeeHyeJin’s Portfolio.</h3>
-        <p class="footerMg">2018 ⎯ 2023 Design</p>
-        <p class="fontColor">&copy; 2023 Hye Jin Lee. vitality life.</p>
       </div>
-      <div class="copy">
-        
+    </article>
+
+    <footer>
+      <div class="footerTitle">
+        <div class="footerMain_font">
+          <h3>LeeHyeJin’s Portfolio.</h3>
+          <p class="footerMg">2018 ⎯ 2023 Design</p>
+          <p class="fontColor">&copy; 2023 Hye Jin Lee. vitality life.</p>
+        </div>
+        <div class="copy"></div>
       </div>
+    </footer>
 
-    </div>
-  </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-
-   <!-- Swiper JS -->
-   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-   <!-- Initialize Swiper -->
-   <script>
-     var swiper = new Swiper(".mySwiper", {
-       slidesPerView: "auto",
-       spaceBetween: 30,
-       pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-       },
-     });
-   </script>
-</body>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+      });
+    </script>
+  </body>
 </html>
