@@ -65,6 +65,7 @@ header .Menu li:nth-child(4) {
 }
 .header_Logo2 {
   display: none;
+  cursor: pointer;
 }
 .header_Logo2.on {
   display: block;
@@ -83,6 +84,7 @@ main {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background: fixed url(../images/object/main-star_play-x.png) 50% / cover;
 }
 main .mainBackground {
   position: absolute;
@@ -366,8 +368,8 @@ img.Project_Img {
 .about {
   width: 100%;
   height: 100vh;
-  background: url(../images/object/articleBackground-23.png) no-repeat 50% /
-    contain;
+  background: fixed url(../images/object/articleBackground-23.png) no-repeat 50% /
+    cover;
   color: #000;
   position: relative;
 }
@@ -709,7 +711,7 @@ img.contact_Logo {
 }
 
 .contactBackground {
-  background: url(../images/object/contactBackground-08.png) no-repeat 50% /
+  background: fixed url(../images/object/contactBackground-08.png) no-repeat 50% /
     cover;
 
   width: 100%;
