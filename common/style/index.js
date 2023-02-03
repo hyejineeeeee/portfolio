@@ -1,3 +1,7 @@
+$('a[href="#"]').click(function (e) {
+  e.preventDefault();
+});
+
 //휠 블락화 (한 페이지씩만 보이게 하는 것)
 window.addEventListener(
   "wheel",
@@ -68,27 +72,20 @@ $(window).scroll(function () {
 $(window).scroll(function () {
   let scroll = $(window).scrollTop();
   if (scroll == 0) {
-    $(".TitleBox_Pub").removeClass("fixed");
-    $(".TitleBox_Package").removeClass("fixed");
-    $(".TitleBox_Web").removeClass("fixed");
-    $(".TitleBox_About").removeClass("fixed");
+    $(
+      ".TitleBox_Pub, .TitleBox_Package, .TitleBox_Web, .TitleBox_About"
+    ).removeClass("fixed");
   } else if (scroll >= 1 && scroll <= 937) {
+    $(".TitleBox_Package, .TitleBox_Web,.TitleBox_About").removeClass("fixed");
     $(".TitleBox_Pub").addClass("fixed");
-    $(".TitleBox_Package").removeClass("fixed");
-    $(".TitleBox_Web").removeClass("fixed");
-    $(".TitleBox_About").removeClass("fixed");
     $(".portfolio_arrowPF").css("opacity", "1");
   } else if (scroll > 938 && scroll <= 1874) {
+    $(".TitleBox_Web, .TitleBox_About, .TitleBox_Pub").removeClass("fixed");
     $(".TitleBox_Package").addClass("fixed");
-    $(".TitleBox_Web").removeClass("fixed");
-    $(".TitleBox_About").removeClass("fixed");
-    $(".TitleBox_Pub").removeClass("fixed");
     $(".portfolio_arrowPF").css("opacity", "1");
   } else if (scroll > 2000 && scroll < 3000) {
-    $(".TitleBox_Web").addClass("fixed");
-    $(".TitleBox_About").removeClass("fixed");
-    $(".TitleBox_Pub").removeClass("fixed");
-    $(".TitleBox_Package").addClass("fixed");
+    $(".TitleBox_About, .TitleBox_Pub").removeClass("fixed");
+    $(".TitleBox_Package, .TitleBox_Web").addClass("fixed");
     $(".portfolio_arrowPF").css("opacity", "1");
   } else if (scroll > 2811 && scroll <= 5622) {
     $(".TitleBox_About").addClass("fixed");
@@ -97,6 +94,24 @@ $(window).scroll(function () {
     $(".portfolio_arrowPF").css("opacity", "0");
   }
 });
+
+// 스크롤시 페이드 인업
+window.addEventListener("scroll", reveal);
+function reveal() {
+  const reveals = document.querySelectorAll(".page");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
 
 /* 컨텍트 scrollTo */
 const symbols = document.querySelector(".material-symbols-outlined");
@@ -116,17 +131,6 @@ headerLogo2.addEventListener("click", () => {
   });
 });
 
-//링크 클릭시 헤당 섹션으로 부드럽게 이동시키기(컨텍트)
-$(document).on("click", ".header_Logo a", function (event) {
-  var headerHeight = $("header").outerHeight();
-  $("html,body").animate(
-    {
-      scrollTop: $(this.hash).offset(),
-    },
-    300
-  );
-});
-
 const main = document.querySelector("main");
 const contact = document.querySelector(".contact");
 const publishingt = document.querySelector(".publishing");
@@ -137,29 +141,105 @@ const menuWork = document.querySelector(".menu_Work");
 const menuAbout = document.querySelector(".menu_About");
 const menuContact = document.querySelector(".menu_Contact");
 
-//링크 클릭시 헤당 섹션으로 부드럽게 이동시키기(헤더)
-$(document).on("click", ".Menu a", function (event) {
-  var headerHeight = $("header").outerHeight();
-  event.preventDefault();
-  $("html,body").animate(
-    {
-      scrollTop: $(this.hash).offset().top,
-    },
-    300
-  );
+const contactMain = document.querySelector(".contact_Main");
+const contactWork = document.querySelector(".contact_Work");
+const contactAbout = document.querySelector(".contact_About");
+
+// //링크 클릭시 헤당 섹션으로 부드럽게 이동시키기(헤더)
+// $(document).on("click", ".Menu a", function (event) {
+//   var headerHeight = $("header").outerHeight();
+//   event.preventDefault();
+//   $("html,body").animate(
+//     {
+//       scrollTop: $(this.hash).offset().top,
+//     },
+//     300
+//   );
+// });
+
+// 컨텍트 메뉴 클릭시 해당 섹션으로 부드럽게 이동
+contactMain.addEventListener("click", (e) => {
+  e.preventDefault();
+  let ht = main.offsetTop;
+
+  scrollTo({
+    top: ht,
+    behavior: "smooth",
+  });
+});
+
+contactWork.addEventListener("click", (e) => {
+  e.preventDefault();
+  let ht = publishingt.offsetTop;
+
+  scrollTo({
+    top: ht,
+    behavior: "smooth",
+  });
+});
+
+contactAbout.addEventListener("click", (e) => {
+  e.preventDefault();
+  let ht = about.offsetTop;
+
+  scrollTo({
+    top: ht,
+    behavior: "smooth",
+  });
+});
+
+// 헤더 클릭시 해당 섹션으로 부드럽게 이동
+menuMain.addEventListener("click", (e) => {
+  e.preventDefault();
+  let ht = main.offsetTop;
+
+  scrollTo({
+    top: ht,
+    behavior: "smooth",
+  });
+});
+
+menuWork.addEventListener("click", (e) => {
+  e.preventDefault();
+  let ht = publishingt.offsetTop;
+
+  scrollTo({
+    top: ht,
+    behavior: "smooth",
+  });
+});
+
+menuAbout.addEventListener("click", (e) => {
+  e.preventDefault();
+  let ht = about.offsetTop;
+
+  scrollTo({
+    top: ht,
+    behavior: "smooth",
+  });
+});
+
+menuContact.addEventListener("click", (e) => {
+  e.preventDefault();
+  let ht = contact.offsetTop;
+
+  scrollTo({
+    top: ht,
+    behavior: "smooth",
+  });
 });
 
 //링크 클릭시 헤당 섹션으로 부드럽게 이동시키기(컨텍트)
-$(document).on("click", ".contact_Menu a", function (event) {
-  var headerHeight = $("header").outerHeight();
-  event.preventDefault();
-  $("html,body").animate(
-    {
-      scrollTop: $(this.hash).offset().top,
-    },
-    300
-  );
-});
+// $(document).on("click", ".contact_Menu a", function (event) {
+//   var headerHeight = $("header").outerHeight();
+//   event.preventDefault();
+//   $("html,body").animate(
+//     {
+//       scrollTop: $(this.hash).offset().top,
+//     },
+//     300
+//   );
+// });
 
 // scrollTop; 스크롤 값. 숫자로 반환
 addEventListener("scroll", () => {
