@@ -84,7 +84,7 @@ main {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: fixed url(../images/object/main-star_play-x.png) 50% / cover;
+  /* background: fixed url(../images/object/main-star_play-x.png) 50% / cover; */
 }
 main .mainBackground {
   position: absolute;
@@ -93,21 +93,64 @@ main .mainBackground_rh {
   width: 1400px;
   top: -33%;
   right: -20%;
+  animation-name: bounce-3;
+  animation-timing-function: ease;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+@keyframes bounce-3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    /* transform: translateY(5%);
+    transform: translateX(50%); */
+    transform: translate(-4%, 6%) scale(1.2);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
 }
 main .mainBackground_lf {
   width: 700px;
   top: -32%;
   left: -20%;
+  animation: rotation 3s linear infinite;
+  /* animation: scale 1s linear infinite; */
 }
 main .main_fonts {
   width: 1000px;
   top: -54%;
-  left: -31%;
+  left: -29%;
+  animation: rotation 3s linear infinite;
 }
-main .main_star_playX {
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+/* main .main_star_playX {
   top: 0;
   left: 0;
-}
+} */
 main h4 {
   font-family: "양진체", 돋움, sans-serif;
   font-size: 3rem;
@@ -116,15 +159,62 @@ main h4 {
   position: absolute;
   top: 45%;
   right: 5%;
+  -webkit-animation: text-blur-out 2.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    infinite;
+  animation: text-blur-out 2.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
 }
-.title_ani {
+@-webkit-keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    /* transform: translateY(300px); */
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+    /* transform: translateY(0); */
+  }
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    /* transform: translateY(300px); */
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+    /* transform: translateY(0); */
+  }
 }
 main .mainTitle {
-  width: 700px;
-  height: 208px;
+  width: 900px;
+  height: 408px;
   position: absolute;
-  top: 55%;
-  right: 3%;
+  top: 50%;
+  right: 1%;
   color: #fff;
   display: block;
 }
@@ -132,6 +222,7 @@ main .mainTitle p {
   font-size: 4.2rem;
   font-family: "NotoSans", 돋움, sans-serif;
   font-weight: 500;
+  height: 150px;
 }
 main .mainTitle h2 {
   text-align: center;
@@ -150,16 +241,33 @@ main .fontStar {
   position: absolute;
   top: 51.5%;
   right: 32.5%;
+  /* animation: blink-effect 1s step-end infinite; */
 }
 img.fontStar {
   width: 170px;
 }
 main .mainTitle .size_fall {
   font-size: 3.1rem;
-  height: 85px;
-  line-height: 85px;
-  margin-right: 8%;
-  /* margin-bottom: 8%; */
+  height: 150px;
+  width: 230px;
+  line-height: 180px;
+  /* margin-right: 8%; */
+  transition: 3s;
+  animation: blink-effect 1s infinite step-end;
+  background: url(../images/object/main-fontStar.png) no-repeat 50% 80% /
+    contain;
+}
+
+.title_ani {
+  animation: title 2.5s infinite ease;
+  text-indent: 75px;
+
+  /* animation: blink-effect 1s infinite step-end; */
+}
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
 }
 
 .mgRt {
@@ -171,7 +279,7 @@ main .mainTitle .size_fall {
 
 /* 움직이는 별 */
 .Art_star {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 .Art_star img {
@@ -180,26 +288,68 @@ main .mainTitle .size_fall {
 /* 오른쪽 아트 하단 흰색 별  */
 .Star1 {
   position: absolute;
-  bottom: 5%;
-  right: 35%;
+  bottom: 8%;
+  right: 30%;
 }
 /* 화살표 하단 블랙라인 별 */
 .Star2 {
   position: absolute;
-  bottom: 10%;
+  bottom: 12%;
   left: 8%;
+  transition: 3s;
 }
 /* 왼쪽 아트 흰색 별 */
 .Star3 {
   position: absolute;
-  top: 10%;
-  left: 14%;
+  top: 6%;
+  left: 9%;
+}
+img.Star6 {
+  width: 45px;
+}
+.Star6 {
+  position: absolute;
+  top: 22%;
+  left: 3%;
+  transition: 3s;
+  animation: blink-effect 2s infinite step-start;
+}
+img.Star7 {
+  width: 35px;
+}
+.Star7 {
+  position: absolute;
+  bottom: 17%;
+  left: 6%;
+  transition: 3s;
+  animation: blink-effect 2s infinite step-start;
+}
+img.Star8 {
+  width: 38px;
+}
+.Star8 {
+  position: absolute;
+  bottom: 33%;
+  left: 8%;
+  transition: 3s;
+}
+img.Star9 {
+  width: 46px;
+}
+.Star9 {
+  position: absolute;
+  bottom: 30%;
+  left: 22%;
+  transition: 3s;
+  animation: blink-effect 1.5s infinite step-start;
 }
 /* 오른쪽 아트 흰색 다이아몬드 별 */
 .Star4 {
   position: absolute;
-  top: 20%;
+  top: 25%;
   right: 5%;
+  transition: 3s;
+  animation: blink-effect 2s infinite step-start;
 }
 img.Star4 {
   width: 100px;
@@ -207,7 +357,7 @@ img.Star4 {
 /* 화살표 상단 블랙 별 */
 .Star5 {
   position: absolute;
-  bottom: 32%;
+  bottom: 36%;
   left: 20%;
 }
 img.Star5 {
@@ -216,17 +366,27 @@ img.Star5 {
 
 /* 포트폴리오 보기 화살표 */
 main .arrow {
-  bottom: 0%;
+  bottom: 5%;
   left: 4%;
   width: 400px;
   height: 424px;
   background: url(../images/object/arrowBackground.png) no-repeat 50% / cover;
+  cursor: pointer;
+}
+@keyframes trans {
+  0% {
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
 }
 main .arrow .arrowImg {
   position: absolute;
   width: 80px;
-  top: 68%;
+  top: 72%;
   left: 40%;
+  animation: bounce 2s infinite;
 }
 main .arrow .viewTitle {
   position: absolute;
@@ -377,12 +537,12 @@ img.profileImg {
   width: 450px;
   border-radius: 250px 250px 0 0;
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   right: 10%;
 }
 .about_mention {
   position: absolute;
-  bottom: 28%;
+  bottom: 33%;
   left: 25%;
 }
 .about_mention h2 {
@@ -403,7 +563,7 @@ img.profileImg {
 .about_mention_bg {
   width: 460px;
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 25%;
 
   display: block;
@@ -523,11 +683,19 @@ img.aboutStar_bk2 {
 
 /* about-2 */
 .portfolioSkils {
+  width: 80vw;
+  height: 70vh;
   display: flex;
+  justify-content: center;
+  /* justify-content: flex-end; */
+  /* padding: 15% 30% 20% 15%; */
+  margin-top: 10%;
+  margin-left: 30%;
+  /* margin-right: 0; */
 
   position: absolute;
   bottom: 10%;
-  right: 10%;
+  right: 0;
 }
 .portfolioSkill {
   border: 3px solid #000;
@@ -568,6 +736,8 @@ img.aboutStar_bk2 {
 
 /* about-3 */
 .portfolioPersonals {
+  width: 63vw;
+  /* height: 70vh; */
   display: flex;
   flex-direction: column;
 
@@ -719,6 +889,9 @@ img.contact_Logo {
 
   display: flex;
 }
+.contactBox {
+  width: 35vw;
+}
 .contactBackgroundFlex {
   display: flex;
   align-items: baseline;
@@ -733,6 +906,7 @@ img.contact_Logo {
     font-size: 3rem;
 } */
 .contactBackground_MainTitle {
+  width: 34vw;
   position: absolute;
   top: 35%;
   right: 21%;
@@ -756,7 +930,7 @@ img.contact_Logo {
   margin-right: 0;
 }
 .contactBackground_SubTitle {
-  width: 990px;
+  width: 51vw;
   border-top: 3px solid #000;
   position: absolute;
   bottom: 12%;
@@ -858,7 +1032,7 @@ footer {
   background-color: #000;
   color: #fff;
 
-  width: 100%;
+  width: 100vw;
   height: 20vh;
   padding: 40px 70px;
   color: #b5b5b5;
