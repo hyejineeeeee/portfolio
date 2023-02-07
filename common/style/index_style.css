@@ -253,7 +253,6 @@ main .mainTitle .size_fall {
   line-height: 180px;
   /* margin-right: 8%; */
   transition: 3s;
-  animation: blink-effect 1s infinite step-end;
   background: url(../images/object/main-fontStar.png) no-repeat 50% 80% /
     contain;
 }
@@ -275,6 +274,11 @@ main .mainTitle .size_fall {
 }
 .mgTop {
   margin-top: 2%;
+}
+.mgTop2 {
+  margin-top: 5%;
+  height: 150px;
+  line-height: 150px;
 }
 
 /* 움직이는 별 */
