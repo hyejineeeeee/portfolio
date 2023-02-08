@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+body {
+  font-family: "PlayfairDisplay", 돋움, sans-serif;
+  color: #000;
+  position: relative;
+}
+header {
+  position: fixed;
+  width: 100vw;
+  height: 14vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 9999;
+}
+header h1 {
+  width: 100px;
+  margin-left: 10px;
+  margin-right: auto;
+  cursor: pointer;
+}
+header .Menu {
+  display: flex;
+  cursor: pointer;
+}
+header .Menu li {
+  margin-right: 40px;
+}
+header .Menu a {
+  font-size: 1.8rem;
+  height: 80px;
+  /* padding: 0 20px; */
+  font-weight: 500;
+}
+.text_doc {
+  text-decoration: none;
+  background-image: linear-gradient(#292929, #292929);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 2px;
+  transition: background-size 500ms ease-in-out;
+}
+.text_doc:hover {
+  background-size: 100% 2px;
+  color: inherit;
+}
+.text_doc:hover.check {
+  background-size: 100% 2px;
+  color: inherit;
+  background-image: linear-gradient(#fff, #fff);
+}
+header .Menu li:nth-child(4) {
+  margin-right: 44px;
+}
+.header_Logo2 {
+  display: none;
+  cursor: pointer;
+}
+.header_Logo2.on {
+  display: block;
+  position: absolute;
+  left: 1.5%;
+  top: 19%;
+  width: 110px;
+}
+.header_Logo.remove {
+  display: none;
+}
+
+/* Main */
+main {
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/webMain.png) no-repeat 50% / cover;
+  position: relative;
+}
+main .projectTitleBox {
+  position: absolute;
+  bottom: 11%;
+  left: 5%;
+}
+main .projectTitle {
+}
+main .projectTitle h2 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+main .projectTitle h3 {
+  font-family: "NotoSans", 돋움, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+main .SubTitle_Box {
+  display: flex;
+  margin-top: 6%;
+}
+main .SubTitle_Box p {
+  font-size: 1.1rem;
+  font-family: "NotoSans", 돋움, sans-serif;
+  font-weight: 500;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 2%;
+  cursor: pointer;
+}
+main .SubTitle_Box p:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* section */
+section {
+  width: 100vw;
+  height: 100vh;
+  background: fixed url(/common/images/object/articleBackground_1920.png)
+    no-repeat 50% / cover;
+  position: relative;
+}
+.part {
+  width: 80vw;
+  display: flex;
+  position: sticky;
+  justify-content: flex-end;
+  margin: 0 auto;
+  /* padding: 6% 15%; */
+}
+.part .title {
+  margin-right: auto;
+}
+.part .title h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  border: 1.5px solid #000;
+  border-radius: 80%;
+  padding: 0 35px;
+  height: 106px;
+  line-height: 106px;
+}
+.mentionBox {
+}
+.mentionBox .mention {
+  margin-top: 7%;
+  font-family: "NotoSans", 돋움, sans-serif;
+}
+.mentionBox .mention h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.mentionBox .mention p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 2%;
+}
+.box {
+  display: flex;
+  font-family: "NotoSans", 돋움, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+.box_1 h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.box_1 p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
