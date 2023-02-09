@@ -29,7 +29,7 @@
 
     <!-- <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script> -->
     <!-- js -->
-    <!-- <script defer src="/common/style/index.js"></script> -->
+    <script defer src="./style/identity.js"></script>
   </head>
   <body>
     <header>
@@ -55,7 +55,7 @@
         <li class="menu_Contact text_doc"><a href="#">Contact</a></li>
       </ul>
     </header>
-    <main>
+    <main class="page-start">
       <div class="projectTitleBox">
         <div class="projectTitle">
           <h2>WEB PORTFOLIO</h2>
@@ -70,19 +70,20 @@
       </div>
     </main>
     <section>
+      <!-- <div class="bg_container"> -->
       <div class="part Project">
-        <div class="title">
+        <div class="title ProjectTitle">
           <h2>01.Project.</h2>
         </div>
         <div class="mentionBox">
           <div class="mention">
             <h2>풀페이지 스크롤과 동적인 애니메이션이 들어간 웹사이트</h2>
             <p>
-              프로젝트를 명확하게 구분하기 위하여 풀페이지를 활용하여 웹사이트를
+              프로젝트를 명확하게 구분하기 위해 풀페이지를 활용하여 웹사이트를
               제작하였습니다.<br />
-              사람들의 흥미를 이끌도록 일러스트에서 Mesh툴을 활용하여, 화려한
-              색감이 돋보이도록<br />제작하였습니다. 또한 JavaScript와jquery를
-              이용하여 동적인 화면을 구현시켜 정보를<br />
+              <br />사람들의 흥미를 이끌도록 일러스트에서 Mesh툴을 활용하여,
+              화려한 색감이 돋보이도록<br />제작하였습니다. 또한
+              JavaScript와 jquery를 이용하여 동적인 화면을 구현시켜 정보를<br />
               전달하는 것을 목표로 하였습니다.
             </p>
           </div>
@@ -91,17 +92,181 @@
               <h4>프로젝트</h4>
               <p>웹포트폴리오</p>
             </div>
-            <div class="box_2 date">
+            <div class="box_1 date">
               <h4>작업기간</h4>
               <p>23.01.16 ~ 23.02.20</p>
             </div>
-            <div class="box_3 set">
+            <div class="box_1 set">
               <h4>기여도</h4>
               <p>개인프로젝트 100%</p>
             </div>
           </div>
         </div>
       </div>
+      <div class="part Design">
+        <div class="title TitleTitle">
+          <h2>02.Design.</h2>
+        </div>
+        <div class="Box DesignBox">
+          <div class="Identity">
+            <h2 class="innerTitle">Identity</h2>
+            <div class="logo">
+              <figure class="figure_logobk">
+                <img
+                  class="logo_bk"
+                  src="/common/images/logo/header-logo-bk.png"
+                  alt="bk_logo"
+                />
+                <figcaption>Logo</figcaption>
+              </figure>
+              <figure class="figure_symbol">
+                <img
+                  class="symbol"
+                  src="/common/images/logo/header-logo.png"
+                  alt="logo"
+                />
+                <figcaption>Symbol</figcaption>
+              </figure>
+              <p class="logo_mention">
+                아이덴티티에는 내 디자인 열정에 대한 “다채로움”, “트렌디한”,
+                “즐거움” 을 표현하여 디자인하였습니다.<br />
+                <br />심볼 background-color를 통해 “다채로움”을 표현하였고,
+                두가지 폰트 스타일을 통해 변하는 트렌드를 감지한다는
+                “트렌디한”을 표현하였습니다. 마지막으로 심볼의 곡선을 통해
+                “즐거움”을 표현하였습니다.
+              </p>
+            </div>
+          </div>
+          <h2 class="innerTitle innerMg">Keyword</h2>
+          <h2 class="innerMention Keyword">
+            <span class="bg">#다채로운</span class="bg"> + <span class="bg">#트렌디한</span> +
+            <span class="bg">#즐거운</span> = <span class="bg">생기를 불어넣는 디자이너</span>
+          </h2>
+          <h2 class="innerTitle innerMg">Tool</h2>
+          <div class="toolBox">
+            <h2 class="innerMention tool">
+              Illustrator
+            </h2>
+            <h2 class="innerMention tool">
+              Visual Studio Code
+            </h2>
+            <h2 class="innerMention tool">
+              JavaScript
+            </h2>
+            <h2 class="innerMention tool">
+              jquery
+            </h2>
+
+          </div>
+          <h2 class="innerTitle innerMg">Color</h2>
+          <div class="circleBox">
+            <h2 class="circle circle1"></h2>
+            <h2 class="circle circle2"></h2>
+            <h2 class="circle circle3"></h2>
+            <h2 class="circle circle4"></h2>
+          </div>
+          <h2 class="innerTitle innerMg">TYPOGRAPHY</h2>
+          <div class="TYPOGRAPHYBox">
+            <div class="KO">
+              <!-- <h2 class="lng">KO</h2> -->
+              <div class="font border">
+                <p class="noto">NotoSans</p>
+                <p class="yang">양진체</p>
+              </div>
+            </div>
+            <div class="ENG">
+              <!-- <h2 class="lng">ENG</h2> -->
+              <div class="font">
+                <p class="paly">PlayfairDisplay</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="part Publishing">
+        <div class="title TitleTitle">
+          <h2>03.Publishing.</h2>
+        </div>
+        <div class="Box PublishingBox">
+          <ul>
+            <li>풀페이지 스크롤과 animation을 활용하여 동적인 움직임 부여</li>
+            <li>position fixed를 활용하여, 타이틀 위치 고정</li>
+            <li>
+              헤더 로고 및 폰트 컬러를 스크롤 위치에 따라 변경 되도록 jquery를
+              통해 구현
+            </li>
+            <li>Scroll To 이벤트를 활용하여 페이지 이동 구현</li>
+          </ul>
+        </div>
+      </div>
+      <div class="part Review">
+        <div class="title TitleTitle">
+          <h2>04.Review.</h2>
+        </div>
+        <div class="Box ReviewBox">
+          <h2>#Scroll 길이에 따른 else if 문</h2>
+          <p>
+            스크롤 길이에 따라 꾸밈 요소 중 하나인 헤더 로고 및 폰트 컬러가
+            변경되도록 jquery의 else if 문을 이용하여 구현했습니다.
+          </p>
+          <h2>#타이틀 fixed의 값을 Scroll 길이에 따라 변형</h2>
+          <p>
+            메인 페이지에서 꾸밈 요소중 하나인 현 위치를 알려주는 타이틀 position
+            값을 fixed로 지정한 뒤 jquery의 else if 문을 통해 scroll 위치에
+            따라 타이틀이 변경되도록 구현했습니다.
+          </p>
+          <h2>#Scroll 페이드인업 애니메이션</h2>
+          <p>
+            페이지 넘어갈 때마다 해당 콘텐츠가 페이드인업 효과로 올라오도록
+            JavaScript의 for if문과 CSS 애니메이션을 이용하여 구현하였습니다.
+          </p>
+          <h2>#다양한 마우스 호버 이벤트</h2>
+          <p>
+            마우스 호버시 발생되는 이벤트를 다양하게 구현하였습니다. 먼저
+            헤더에 마우스 호버시 텍스트 밑줄이 생성되도록 하였으며, 또한
+            컨텍트 페이지 부분에 마우스 호버시 배경 및 폰트 컬러 변경, 텍스트
+            밑줄이 생성되도록 구현하였습니다. 또 애니메이션이 구현되고 있는
+            하위에 위치한 Scroll To Top 요소에 마우스 호버시 애니메이션이 중단
+            되도록 구현하였습니다.
+          </p>
+          <div class="btn">
+            <button>View Site</button>
+          </div>
+        </div>
+      </div>
+        <div class="scrollTo">
+          <span class="material-symbols-outlined"> arrow_circle_up </span>
+          <p>Scroll To Top</p>
+        </div>
+      <div class="banner">
+        <div class="wishList_prev">
+            <a href="/index.html">
+              <div class="prev_title">
+                <h3>Prev</h3>
+                <h2>넥슨게임즈</h2>
+              </div>
+            </a>
+        </div>
+        <div class="wishList_next">
+            <a href="/index.html">
+              <div class="next_title">
+                <h3>Next</h3>
+                <h2>Knotters</h2>
+              </div>
+            </a>
+        </div>
+      </div>
+      <footer>
+        <div class="footerTitle">
+          <div class="footerMain_font">
+            <h3>LeeHyeJin’s Portfolio.</h3>
+            <p class="footerMg">2018 ⎯ 2023 Design</p>
+            <p class="fontColor">&copy; 2023 Hye Jin Lee. vitality life.</p>
+          </div>
+          <div class="copy"></div>
+        </div>
+      </footer>
+      <!-- </div> -->
     </section>
   </body>
 </html>
