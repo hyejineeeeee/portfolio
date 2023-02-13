@@ -42,12 +42,12 @@ $(window).scroll(function () {
   if (scroll == 0) {
     $(".Menu").css("color", "#000");
     $(".text_doc").css("background-image", "linear-gradient(#292929,#292929)");
-  } else if (scroll > 2811) {
-    $(".Menu").css("color", "#000");
-    $(".text_doc").css("background-image", "linear-gradient(#292929,#292929)");
-  } else if (scroll >= 1 && scroll >= 936 && scroll < 3745) {
+  } else if (scroll >= 1 && scroll < 3241) {
     $(".Menu").css("color", "#fff");
     $(".text_doc").css("background-image", "linear-gradient(#fff,#fff)");
+  } else if (scroll > 3240 && scroll <= 6480) {
+    $(".Menu").css("color", "#000");
+    $(".text_doc").css("background-image", "linear-gradient(#292929,#292929)");
   }
 });
 
@@ -61,7 +61,7 @@ $(window).scroll(function () {
   } else if (scroll > 0 && scroll < 937) {
     $(".header_Logo").addClass("remove");
     $(".header_Logo2").addClass("on");
-  } else if (scroll >= 5624 && scroll < 9746) {
+  } else if (scroll >= 6481 && scroll < 9746) {
     $("header").css("opacity", "0");
   } else if (scroll < 6558) {
     $("header").css("opacity", "1");
@@ -75,19 +75,19 @@ $(window).scroll(function () {
     $(
       ".TitleBox_Pub, .TitleBox_Package, .TitleBox_Web, .TitleBox_About"
     ).removeClass("fixed");
-  } else if (scroll >= 1 && scroll <= 937) {
+  } else if (scroll >= 1 && scroll <= 1080) {
     $(".TitleBox_Package, .TitleBox_Web,.TitleBox_About").removeClass("fixed");
     $(".TitleBox_Pub").addClass("fixed");
     $(".portfolio_arrowPF").css("opacity", "1");
-  } else if (scroll > 938 && scroll <= 1874) {
+  } else if (scroll > 1080 && scroll <= 2160) {
     $(".TitleBox_Web, .TitleBox_About, .TitleBox_Pub").removeClass("fixed");
     $(".TitleBox_Package").addClass("fixed");
     $(".portfolio_arrowPF").css("opacity", "1");
-  } else if (scroll > 2000 && scroll < 3000) {
+  } else if (scroll >= 2161 && scroll < 3240.6) {
     $(".TitleBox_About, .TitleBox_Pub").removeClass("fixed");
     $(".TitleBox_Package, .TitleBox_Web").addClass("fixed");
     $(".portfolio_arrowPF").css("opacity", "1");
-  } else if (scroll > 2811 && scroll <= 5622) {
+  } else if (scroll > 3247 && scroll <= 6480) {
     $(".TitleBox_About").addClass("fixed");
   } else if (scroll > 5623) {
     $(".TitleBox_About").removeClass("fixed");
