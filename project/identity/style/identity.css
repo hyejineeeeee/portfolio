@@ -132,8 +132,8 @@ section {
   position: relative;
   /* background-color: #fff; */
   box-sizing: border-box;
-  background: fixed url(/common/images/object/articleBackground_1920.png)
-    no-repeat 50% / cover;
+  background: fixed url(../images/articleBackground_1920.png) no-repeat 50% /
+    cover;
 }
 .bg_container {
   /* width: 100%;
@@ -505,7 +505,7 @@ footer {
 }
 .wishList_prev {
   width: 50%;
-  background: url(/project/nexon/veiled_background01.png) no-repeat 50% / cover;
+  background: url(../images/veiled01.jpg) no-repeat 50% / cover;
   height: 20vw;
 }
 .wishList_prev a {
@@ -576,7 +576,7 @@ footer {
 .wishList_next {
   width: 50vw;
   height: 20vw;
-  background: url(/project/knotters/img_main_intro.jpg) no-repeat 50% / cover;
+  background: url(../images/img_main_intro.jpg) no-repeat 50% / cover;
 }
 .next_title h3 {
   font-size: 2rem;
