@@ -1,0 +1,62 @@
+@charset "utf-8";
+body {
+  font-family: "Prompt", 돋움, sans-serif;
+  color: #000;
+  /* position: relative; */
+}
+header {
+  width: 100%;
+  height: 14.5vh;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
+img.svg {
+  width: 30px;
+}
+.headerBox1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2% 3% 0 3%;
+}
+.Menu {
+  display: flex;
+  font-size: 24px;
+  margin-right: auto;
+}
+.Menu li {
+  font-weight: 600;
+  margin-right: 25%;
+}
+.Menu li:last-child {
+  margin-right: 0;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+}
+img.header_Logo {
+  width: 350px;
+}
+.iconBox {
+  display: flex;
+  align-items: center;
+}
+
+.mainTitle {
+  position: absolute;
+  bottom: 18%;
+  right: 8%;
+  font-family: "SpoqaHanSansNeo", 돋움, sans-serif;
+  color: #fff;
+}
+.mainTitle h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.mainTitle p {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: right;
+}
