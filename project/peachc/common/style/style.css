@@ -1,4 +1,60 @@
 @charset "utf-8";
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ccaefc;
+  border-radius: 0;
+}
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes 요리조리 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-8deg);
+  }
+
+  50% {
+    transform: rotate(8deg);
+  }
+
+  75% {
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 body {
   font-family: "Prompt", 돋움, sans-serif;
@@ -14,6 +70,8 @@ header {
   z-index: 9999;
   background-color: #fff;
   position: fixed;
+  transition: 0.2s;
+  cursor: pointer;
 }
 img.svg {
   width: 30px;
@@ -23,7 +81,7 @@ img.svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 3% 0 3%;
+  padding: 1.5% 3% 0 3%;
 }
 .Menu {
   display: flex;
@@ -78,6 +136,7 @@ main {
   width: 100%;
   height: 100vh;
   position: relative;
+  background: url(../images/main-bg-01.png) no-repeat 50% / cover;
 }
 .main-1 {
   width: 100%;
@@ -116,6 +175,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -55%, 0);
+  z-index: 999;
 }
 .mauvewave {
   position: absolute;
@@ -124,7 +184,7 @@ main {
 .mainTitle {
 }
 .mdPICKTitle {
-  font-size: 14rem;
+  font-size: 12rem;
   font-weight: 700;
 }
 .mdPICKTitle_rt {
@@ -141,7 +201,7 @@ main {
   font-family: "SpoqaHanSansNeo", 돋움, sans-serif;
   position: absolute;
   bottom: 10%;
-  right: 29%;
+  right: 23%;
   line-height: 1.6;
 }
 .productTitle h3 {
@@ -161,11 +221,12 @@ main {
   justify-content: flex-end;
   align-items: center;
   width: 500px;
+  cursor: pointer;
 }
 .banner_md_Btn {
   position: absolute;
   bottom: 5%;
-  left: 7%;
+  left: 6%;
 }
 .viewBtn p {
   font-size: 1.5rem;
@@ -180,6 +241,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-left: 4%;
+  animation: bounce 2s infinite;
 }
 img.arrow {
   width: 30px;
@@ -195,8 +257,8 @@ img.arrow {
 }
 .item_mauvewave {
   position: absolute;
-  right: 18%;
-  bottom: 13%;
+  right: 12%;
+  bottom: 9%;
   transform: rotate(-25deg);
 }
 .item_mauvewave img {
@@ -204,12 +266,12 @@ img.arrow {
 }
 .item_sunsetgrass {
   position: absolute;
-  right: 10%;
+  right: 7%;
   top: 40%;
-  transform: rotate(8deg);
+  transform: rotate(9deg);
 }
 .item_sunsetgrass img {
-  width: 160px;
+  width: 150px;
 }
 .item_replaypink {
   position: absolute;
@@ -218,7 +280,7 @@ img.arrow {
   transform: rotate(-16deg);
 }
 .item_replaypink img {
-  width: 200px;
+  width: 160px;
 }
 
 /* slideAni" */
@@ -309,10 +371,10 @@ img.arrow {
 }
 .product_PALETTE {
   position: absolute;
-  left: 38%;
+  left: 42%;
 }
 img.product_PALETTE {
-  width: 400px;
+  width: 360px;
 }
 .innerTitle {
   /* margin-left: auto; */
@@ -333,6 +395,9 @@ img.product_PALETTE {
   font-size: 1.4rem;
   font-weight: 400;
   color: #222;
+}
+.product_1 .innerTitle h3 {
+  font-size: 2.1rem;
 }
 .Circle {
   width: 100%;
@@ -443,7 +508,7 @@ img.product_UNDEREYE {
 }
 .product_3_innerTitle {
   position: absolute;
-  right: 0;
+  right: 10%;
 }
 .UNDER_Circle {
   justify-content: flex-end;
@@ -459,20 +524,16 @@ img.product_UNDEREYE {
   margin: 0;
 }
 .Circle .EYE_1 {
-  background-color: #ffd6bf;
+  background-color: #d3a886;
 }
 .Circle .EYE_2 {
-  background-color: #ffd7fb;
+  background-color: #b89083;
 }
-.Circle .EYE_3 {
-  background-color: #fdc0e4;
-}
-
 .product_UNDEREYE_Btn {
   /* margin-top: 10%; */
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 10%;
 }
 
 /* BRUSH */
@@ -482,14 +543,14 @@ img.product_UNDEREYE {
   justify-content: flex-end;
   align-items: center;
 }
-.product_BRUSH {
+.product_mascara {
   position: absolute;
-  right: 44%;
+  right: 43.5%;
 }
 img.product_4_modal {
   margin-left: auto;
 }
-img.product_BRUSH {
+img.product_mascara {
   width: 320px;
 }
 .innerTitle {
@@ -500,26 +561,23 @@ img.product_BRUSH {
   position: absolute;
   left: 0;
 }
-.BRUSH_Circle {
+.mascara_Circle {
   justify-content: flex-start;
 }
-.Circle .BRUSH {
+.Circle .mascara {
   display: block;
   width: 65px;
   height: 65px;
   border-radius: 65%;
   margin-right: 3%;
 }
-.Circle .BRUSH_1 {
+.Circle .mascara_1 {
   background-color: #000;
 }
-.Circle .BRUSH_2 {
+.Circle .mascara_2 {
   background-color: #61351a;
 }
-.Circle .BRUSH_3 {
-  background-color: #825c38;
-}
-.product_BRUSH_Btn {
+.product_mascara_Btn {
   /* margin-top: 10%; */
   display: flex;
   justify-content: flex-start;
@@ -538,13 +596,16 @@ img.product_BRUSH {
 }
 .aboutTitle {
   font-family: "Frank", 돋움, sans-serif;
-  font-size: 17rem;
+  font-size: 10rem;
   text-align: center;
-  color: #222;
+  color: #5e5e5e;
   cursor: pointer;
+  font-weight: 600;
+  /* z-index: 9999; */
 }
 h2.big {
-  font-size: 22rem;
+  display: block;
+  font-size: 18rem;
   font-weight: 300;
   font-style: italic;
 }
@@ -554,12 +615,18 @@ h2.big {
 .bottom {
   display: flex;
   justify-content: flex-end;
+  padding: 0 3%;
+  margin-top: 3%;
 }
 h2.mg {
   margin-right: auto;
 }
+.sm {
+  font-size: 12rem;
+  margin-top: 1%;
+}
 .font {
-  font-weight: 500;
+  font-size: 15rem;
 }
 .mention {
   font-family: "SpoqaHanSansNeo", 돋움, sans-serif;
@@ -568,8 +635,8 @@ h2.mg {
   color: #222;
   line-height: 1.8;
   position: absolute;
-  bottom: 7%;
-  right: 15%;
+  bottom: 9%;
+  right: 13%;
 }
 .mention span {
   font-weight: 600;
@@ -580,14 +647,141 @@ h2.mg {
   display: flex;
   justify-content: flex-start;
   position: absolute;
-  bottom: 7%;
+  bottom: 9%;
   left: 18%;
 }
 .slide_modal {
   position: absolute;
-  bottom: 18%;
-  left: 33%;
+  bottom: 19%;
+  left: 34%;
 }
 img.slide_modal {
-  width: 450px;
+  width: 440px;
+}
+/* hoverEV_1 */
+.hoverEV_1 {
+  display: none;
+}
+.big:hover {
+  color: #000;
+}
+.big:hover .hoverEV_1 {
+  display: block;
+}
+.hoverEV_replaypink {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  transform: rotate(-15deg);
+  animation: 요리조리 1s infinite ease-in-out;
+}
+img.hoverEV_replaypink {
+  width: 190px;
+}
+.about_Product {
+  z-index: 9;
+  transition: 3s;
+}
+.hoverEV_GLITTER_PH {
+  position: absolute;
+  top: 30%;
+  right: 19%;
+  transform: rotate(15deg);
+  animation: 요리조리 1s infinite ease-in-out;
+}
+.hoverEV_MASCARA_BLUE {
+  position: absolute;
+  bottom: 5%;
+  right: 9%;
+  transform: rotate(-14deg);
+  animation: 요리조리 1s infinite ease-in-out;
+}
+img.hoverEV_MASCARA_BLUE {
+  width: 160px;
+}
+
+/* hoverEV_2 */
+.hoverEV_2 {
+  display: none;
+}
+.sm:hover {
+  color: #000;
+}
+.sm:hover .hoverEV_2 {
+  display: block;
+}
+.hoverEV_tint {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  transform: rotate(-15deg);
+  animation: 요리조리 1s infinite ease-in-out;
+}
+img.hoverEV_tint {
+  width: 190px;
+}
+.hoverEV_custion {
+  position: absolute;
+  top: 30%;
+  right: 8%;
+  transform: rotate(15deg);
+  animation: 요리조리 1s infinite ease-in-out;
+}
+img.hoverEV_custion {
+  width: 350px;
+}
+.hoverEV_tunningbrushset03 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  transform: rotate(-14deg);
+  animation: 요리조리 1s infinite ease-in-out;
+}
+img.hoverEV_tunningbrushset03 {
+  width: 320px;
+}
+
+/* hoverEV_3 */
+.hoverEV_3 {
+  display: none;
+}
+.font:hover {
+  color: #000;
+}
+.font:hover .hoverEV_3 {
+  display: block;
+}
+.hoverEV_MASCARA_PINK {
+  position: absolute;
+  top: 5%;
+  left: 13%;
+  transform: rotate(-15deg);
+  animation: 요리조리 1s infinite ease-in-out;
+}
+img.MASCARA_PINK {
+  width: 150px;
+}
+.hoverEV_mauvewave {
+  position: absolute;
+  top: 30%;
+  right: 14%;
+  transform: rotate(15deg);
+  animation: 요리조리 1s infinite ease-in-out;
+}
+img.hoverEV_mauvewave {
+  width: 160px;
+}
+.hoverEV_base {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  transform: rotate(-14deg);
+  animation: 요리조리 1s infinite ease-in-out;
+}
+img.hoverEV_base {
+  width: 140px;
+}
+
+.review_Box {
+  width: 100%;
 }
