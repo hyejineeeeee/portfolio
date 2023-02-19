@@ -9,7 +9,7 @@ window.addEventListener("scroll", () => {
   if (window.scrollY > 1) {
     header.setAttribute(
       "style",
-      "height: 10.5vh; box-shadow: 13.7px 0px 27.9px rgba(0, 0, 0, 0),21.4px 0px 93.6px rgba(0, 0, 0, 0.007),22px 0px 419px rgba(0, 0, 0, 0.07);"
+      "height: 10vh; box-shadow: 13.7px 0px 27.9px rgba(0, 0, 0, 0),21.4px 0px 93.6px rgba(0, 0, 0, 0.01),22px 0px 419px rgba(0, 0, 0, 0.1);"
     );
     h1.setAttribute("style", "display: none;");
     // headerLogo2.setAttribute("style", "display: block;");

@@ -81,7 +81,7 @@ img.svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5% 3% 0 3%;
+  padding: 1.5% 3%;
 }
 .Menu {
   display: flex;
@@ -216,6 +216,7 @@ main {
   margin-top: 5%;
   color: #444;
 }
+/* viewBtn */
 .viewBtn {
   display: flex;
   justify-content: flex-end;
@@ -243,9 +244,26 @@ main {
   margin-left: 4%;
   animation: bounce 2s infinite;
 }
+.viewBtn .arrowbtn:hover {
+  animation: none;
+}
+.text_doc {
+  text-decoration: none;
+  background-image: linear-gradient(#292929, #292929);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 2px;
+  transition: background-size 500ms ease-in-out;
+}
+.viewBtn:hover .text_doc {
+  background-size: 100% 2px;
+  color: inherit;
+}
 img.arrow {
   width: 30px;
 }
+
+
 .productImg_Box {
   width: 100%;
 }
@@ -598,7 +616,7 @@ img.product_mascara {
   font-family: "Frank", 돋움, sans-serif;
   font-size: 10rem;
   text-align: center;
-  color: #5e5e5e;
+  color: #292929;
   cursor: pointer;
   font-weight: 600;
   /* z-index: 9999; */
@@ -782,6 +800,90 @@ img.hoverEV_base {
   width: 140px;
 }
 
+
+.review_banner {width: 100%; 
+  margin-top: 7%;}
 .review_Box {
   width: 100%;
 }
+.review_title{display: flex; flex-direction: column;}
+.review_title .title h3{text-align: left;}
+
+/* instagram */
+.instagram{margin-top: 7%; width: 100%; height: 100vh;}
+.instagram .title{padding: 0 9.4%;}
+.instagram .title h3{text-align: left; font-style: normal;}
+.instagram .title p{
+  font-family: "Frank", 돋움, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+color: #777;}
+
+/* hover */
+/* .instagram_Box {width: 100%; display: flex; position: relative; overflow: hidden;}
+.feed {position: relative;}
+.feed:hover span {opacity: 1;}
+.feed span {position: absolute; top: 50%; left: 50%;
+  transform: translate3d(-50%, -50%, 0); z-index: 999; font-size: 5rem; color: #E9FF60; opacity: 0; transition: .6s;}
+.feed img {border-radius: 5%; transition: .8s;}
+.feed:hover img {filter: brightness(50%);}
+
+.feed_1 {width: 800px; position: relative;}
+.feed_1 img {width: 350px; position: absolute;bottom: 0; left: -15%;
+  transform: translate3d(-50%, -50%, 0);} */
+
+.instagram_Box {width: 100%; display: flex; position: relative; overflow: hidden; padding: 25% 0;
+  margin-top: 3%;}
+
+.feed {display: flex; justify-content: center; align-items: center;}
+.feed img {border-radius: 5%; transition: .8s;}
+.feed:hover img {filter: brightness(50%);}
+
+.feed_1 {position: absolute; left: -5%; bottom: 0;}
+.feed_1 img {width: 350px;}
+.feed_1 a {position: relative;}
+.feed_1 span {position: absolute; top: 50%; left: 50%;
+  transform: translate3d(-50%, -50%, 0); z-index: 999; font-size: 5rem; color: #E9FF60; opacity: 0; transition: .6s;}
+.feed_1:hover span {opacity: 1;}
+
+.feed_2 {position: absolute; left: 18%; top: 5%;}
+.feed_2 img {width: 580px;}
+.feed_2 a {position: relative;}
+.feed_2 span {position: absolute; top: 50%; left: 50%;
+  transform: translate3d(-50%, -50%, 0); z-index: 999; font-size: 5rem; color: #E9FF60; opacity: 0; transition: .6s;}
+.feed_2:hover span {opacity: 1;}
+
+.feed_3 {position: absolute; left: 53%; top: 0;}
+.feed_3 img {width: 250px;}
+.feed_3 a {position: relative;}
+.feed_3 span {position: absolute; top: 50%; left: 50%;
+  transform: translate3d(-50%, -50%, 0); z-index: 999; font-size: 5rem; color: #E9FF60; opacity: 0; transition: .6s;}
+.feed_3:hover span {opacity: 1;}
+
+.feed_4 {position: absolute; left: 53%; bottom: 0;}
+.feed_4 img {width: 450px;}
+.feed_4 a {position: relative;}
+.feed_4 span {position: absolute; top: 50%; left: 50%;
+  transform: translate3d(-50%, -50%, 0); z-index: 999; font-size: 5rem; color: #E9FF60; opacity: 0; transition: .6s;}
+.feed_4:hover span {opacity: 1;}
+
+.feed_5 {position: absolute; right: 0; bottom: 25%;}
+.feed_5 img {width: 360px;}
+.feed_5 a {position: relative;}
+.feed_5 span {position: absolute; top: 50%; left: 50%;
+  transform: translate3d(-50%, -50%, 0); z-index: 999; font-size: 5rem; color: #E9FF60; opacity: 0; transition: .6s;}
+.feed_5:hover span {opacity: 1;}
+
+
+/* footer */
+footer {width: 90%; border-top: #999 solid 2px; padding: 4%; margin: 0 auto; margin-top: 15%; /* color: #fff; background-color: #000; */ color: #222;}
+.footerTitle {display: flex; justify-content: flex-end; line-height: 2;}
+.inner_title {margin-right: auto;}
+footer h2 {width: 180px; margin-bottom: 2%;}
+footer p { 
+  font-family: "SpoqaHanSansNeo", 돋움, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;}
+.copyright {margin-top: 5%; color: #777;}
+.inner_service {font-size: 1.2rem;}
+.inner_sns svg {margin-top: 5%; width: 33px; margin-right: 1%; cursor: pointer;}
