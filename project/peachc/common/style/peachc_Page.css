@@ -84,7 +84,7 @@ header .Menu li:nth-child(4) {
 main {
   width: 100%;
   height: 100vh;
-  background-image: url(/project/peachc/common/images/modal/PALETTE_lay_04.jpg);
+  background-image: url(../images/modal/PALETTE_lay_04.jpg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -510,7 +510,7 @@ footer {
 }
 .wishList_prev {
   width: 50%;
-  background: url(/project/identity/images/webMain.png) no-repeat 50% / cover;
+  background: url(../images/project/webMain.png) no-repeat 50% / cover;
   height: 20vw;
 }
 .wishList_prev a {
@@ -581,7 +581,7 @@ footer {
 .wishList_next {
   width: 50vw;
   height: 20vw;
-  background: url(/project/knotters/img_main_intro.jpg) no-repeat 50% / cover;
+  background: url(../images/project/img_main_intro.jpg) no-repeat 50% / cover;
 }
 .next_title h3 {
   font-size: 2rem;

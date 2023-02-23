@@ -507,7 +507,7 @@ footer {
 }
 .wishList_prev {
   width: 50%;
-  background: url(/project/peachc/common/images/modal/PALETTE_lay_04.jpg) no-repeat left top / cover;
+  background: url(../images/project/PALETTE_lay_04.jpg) no-repeat left top / cover;
   height: 20vw;
 }
 .wishList_prev a {
@@ -578,7 +578,7 @@ footer {
 .wishList_next {
   width: 50vw;
   height: 20vw;
-  background: url(../images/webMain.png) no-repeat 50% / cover;
+  background: url(../images/project/webMain.png) no-repeat 50% / cover;
 }
 .next_title h3 {
   font-size: 2rem;
