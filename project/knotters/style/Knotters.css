@@ -23,6 +23,7 @@ header {
   align-items: center;
   z-index: 9999;
   transition: top 0.2s ease-in-out;
+  color: #fff;
 }
 header h1 {
   width: 100px;
@@ -45,7 +46,7 @@ header .Menu a {
 }
 .text_doc {
   text-decoration: none;
-  background-image: linear-gradient(#292929, #292929);
+  background-image: linear-gradient(#fff, #fff);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 0% 2px;
@@ -84,8 +85,9 @@ header .Menu li:nth-child(4) {
 main {
   width: 100%;
   height: 100vh;
-  background: url(../images/webMain.png) no-repeat 50% / cover;
+  background: url(../images/img_main_intro.jpg) no-repeat 50% / cover;
   position: relative;
+  color: #fff;
 }
 main .projectTitleBox {
   position: absolute;
@@ -112,7 +114,7 @@ main .SubTitle_Box p {
   font-size: 1.1rem;
   font-family: "NotoSans", 돋움, sans-serif;
   font-weight: 500;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   border-radius: 10px;
   width: 140px;
   height: 40px;
@@ -134,8 +136,6 @@ section {
   position: relative;
   /* background-color: #fff; */
   box-sizing: border-box;
-  background: fixed url(../images/articleBackground_1920.png) no-repeat 50% /
-    cover;
 }
 .bg_container {
   /* width: 100%;
@@ -507,7 +507,7 @@ footer {
 }
 .wishList_prev {
   width: 50%;
-  background: url(../images/img_main_intro.jpg) no-repeat 50% / cover;
+  background: url(/project/peachc/common/images/modal/PALETTE_lay_04.jpg) no-repeat left top / cover;
   height: 20vw;
 }
 .wishList_prev a {
@@ -578,7 +578,7 @@ footer {
 .wishList_next {
   width: 50vw;
   height: 20vw;
-  background: url(/project/peachc/common/images/modal/PALETTE_lay_04.jpg) no-repeat left top / cover;
+  background: url(../images/webMain.png) no-repeat 50% / cover;
 }
 .next_title h3 {
   font-size: 2rem;

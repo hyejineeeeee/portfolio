@@ -876,18 +876,21 @@ img.hoverEV_base {
   line-height: 1.7;
   color: #777;
 }
-.All_Box {
-  opacity: 0;
+
+/* .All_Box {
+  display: block;
 }
 .All_Box.active {
-  opacity: 1;
+  opacity: 0;
 }
 .Face_Box {
   opacity: 0;
 }
 .Face_Box.active {
   opacity: 1;
-}
+} */
+
+
 /* instagram */
 .instagram {
   margin-top: 7%;

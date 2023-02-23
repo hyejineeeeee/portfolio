@@ -52,8 +52,11 @@ body {
   width: 180px;
 }
 .swiper-slide img.mascara {
-  width: 220px;
+  width: 250px;
 }
+
+.swiper-slide img.base {width: 105px;}
+.swiper-slide img.lipstik {width: 350px;}
 .swiper-slide .liner {
 }
 @media only screen and (min-width: 769px) {

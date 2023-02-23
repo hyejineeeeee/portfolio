@@ -283,8 +283,10 @@ const All = document.querySelector(".All");
 const Eye = document.querySelector(".Eye");
 const Lip = document.querySelector(".Lip");
 
-const AllBox = document.querySelector(".All_Box");
-const FaceBox = document.querySelector(".Face_Box");
+const AllBox = document.querySelectorAll(".All_Box");
+const FaceBox = document.querySelectorAll(".Face_Box");
+const EyeBox = document.querySelectorAll(".Eye_Box");
+const LipBox = document.querySelectorAll(".Lip_Box");
 // const Lip_Box = document.querySelectorAll("");
 // const Eye_Box = document.querySelectorAll("");
 
@@ -303,11 +305,12 @@ reviewMenu.forEach((e) => {
   e.addEventListener("click", handleClick);
 });
 
-All.addEventListener("click", (e) => {
-  AllBox.classList.add("active");
-});
+// All.addEventListener("click", (e) => {
+//   AllBox.classList.add("active");
+// });
 Face.addEventListener("click", (e) => {
-  FaceBox.classList.add("active");
+  reviewBox.classList.add("active");
+  reviewBox2.classList.add("active");
 });
 
 function handleClick(event) {
@@ -318,3 +321,13 @@ function handleClick(event) {
   // 클릭한 div만 "click"클래스 추가
   event.target.classList.add("click");
 }
+
+const reviewBox2 = document.querySelector('.review_Box2');
+const reviewBox = document.querySelector('.review_Box');
+
+// (function reviewBox2() {
+//     Face.addEventListener('click', () => {
+//       reviewBox2.classList.add('active');
+//       reviewBox.classList.add('active');
+//     });
+// })();
