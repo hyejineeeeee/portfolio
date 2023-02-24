@@ -702,10 +702,11 @@ img.slide_modal {
 }
 .big:hover .hoverEV_1 {
   display: block;
+  z-index: 9999;
 }
 .hoverEV_replaypink {
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 10%;
   transform: rotate(-15deg);
   animation: 요리조리 1s infinite ease-in-out;
@@ -719,7 +720,7 @@ img.hoverEV_replaypink {
 }
 .hoverEV_GLITTER_PH {
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: 19%;
   transform: rotate(15deg);
   animation: 요리조리 1s infinite ease-in-out;
@@ -747,7 +748,7 @@ img.hoverEV_MASCARA_BLUE {
 }
 .hoverEV_tint {
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 10%;
   transform: rotate(-15deg);
   animation: 요리조리 1s infinite ease-in-out;
@@ -757,7 +758,7 @@ img.hoverEV_tint {
 }
 .hoverEV_custion {
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: 8%;
   transform: rotate(15deg);
   animation: 요리조리 1s infinite ease-in-out;
@@ -788,7 +789,7 @@ img.hoverEV_tunningbrushset03 {
 }
 .hoverEV_MASCARA_PINK {
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 13%;
   transform: rotate(-15deg);
   animation: 요리조리 1s infinite ease-in-out;
@@ -798,7 +799,7 @@ img.MASCARA_PINK {
 }
 .hoverEV_mauvewave {
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: 14%;
   transform: rotate(15deg);
   animation: 요리조리 1s infinite ease-in-out;

@@ -37,6 +37,7 @@ header .Menu {
 }
 header .Menu li {
   margin-right: 40px;
+  opacity: 0;
 }
 header .Menu a {
   font-size: 1.8rem;
