@@ -85,7 +85,7 @@ header .Menu li:nth-child(4) {
 main {
   width: 100%;
   height: 100vh;
-  background: url(../images/project/silhoutte_bg.png) no-repeat top left / 110%;
+  background: url(../images/project/ROSEMOON_PACKAGE.png) no-repeat 50% / cover;
   position: relative;
   color: #000;
 }
@@ -136,7 +136,6 @@ section {
   position: relative;
   /* background-color: #fff; */
   box-sizing: border-box;
-  background-color: rgb(255, 254, 235);
 }
 .bg_container {
   /* width: 100%;
@@ -145,7 +144,7 @@ section {
     no-repeat 50% / cover; */
 }
 .part {
-  width: 80vw; height: 100vh;
+  width: 80vw; height: 85vh;
   display: flex;
   position: sticky;
   justify-content: flex-start;
@@ -221,13 +220,13 @@ section {
 }
 .Project_img_1 {
   width: 100%; height: 100vh;
-  background: url(../images/project/실루엣패키지VER2.png) no-repeat 50% / cover;}
+  background: url(../images/project/ROSEMOON_ROSYPINK.png) no-repeat 50% / cover;}
 .Project_img_2 {
-  width: 100%; height: 100vh;
-  background: url(../images/project/silhoutte_ver2_2.png) no-repeat 50% / cover;}
+  width: 100%; height: 120vh;
+  background: url(../images/project/ROSEMOON_COTTONGRAY.png) no-repeat 50% / cover;}
 .Project_img_3 {
   width: 100%; height: 100vh;
-  background: url(../images/project/silhoutte_1day.png) no-repeat 50% / cover;}
+  background: url(../images/project/ROSEMOON_MILKYBROWN.png) no-repeat 50% / cover;}
 
 
 /* footer */
@@ -251,7 +250,7 @@ footer {
 }
 .wishList_prev {
   width: 50%;
-  background: url(../images/project/CELINA.png) no-repeat left center / cover;
+  background: url(../images/project/실루엣패키지VER2.png) no-repeat left center / cover;
   height: 20vw;
 }
 .wishList_prev a {
@@ -322,7 +321,7 @@ footer {
 .wishList_next {
   width: 50vw;
   height: 20vw;
-  background: url(../images/project/ROSEMOON_PACKAGE.png) no-repeat top / cover;
+  background: url(../images/project/NARULERA_3.png) no-repeat 50% / cover;
 }
 .next_title h3 {
   font-size: 2rem;

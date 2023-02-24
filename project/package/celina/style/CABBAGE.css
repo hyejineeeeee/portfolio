@@ -1,0 +1,366 @@
+@charset "utf-8";
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff9de6;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+body {
+  font-family: "PlayfairDisplay", 돋움, sans-serif;
+  color: #000;
+  position: relative;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 9999;
+  transition: top 0.2s ease-in-out;
+  color: #000;
+}
+header h1 {
+  width: 100px;
+  margin-left: 10px;
+  margin-right: auto;
+  cursor: pointer;
+}
+header .Menu {
+  display: flex;
+  cursor: pointer;
+}
+header .Menu li {
+  margin-right: 40px;
+}
+header .Menu a {
+  font-size: 1.8rem;
+  height: 80px;
+  /* padding: 0 20px; */
+  font-weight: 500;
+}
+.text_doc {
+  text-decoration: none;
+  background-image: linear-gradient(#000, #000);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 2px;
+  transition: background-size 500ms ease-in-out;
+}
+.text_doc:hover {
+  background-size: 100% 2px;
+  color: inherit;
+}
+.text_doc:hover.check {
+  background-size: 100% 2px;
+  color: inherit;
+  background-image: linear-gradient(#000, #000);
+}
+header .Menu li:nth-child(4) {
+  margin-right: 44px;
+}
+.header_Logo2 {
+  width: 100px;
+  margin-left: 10px;
+  margin-right: auto;
+  cursor: pointer;
+}
+.header_Logo2.on {
+  display: block;
+  position: absolute;
+  left: 1.5%;
+  top: 19%;
+  width: 110px;
+}
+.header_Logo.remove {
+  display: none;
+}
+
+/* Main */
+main {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/project/CABBAGE_PACKAGE_1.png) no-repeat top right / 150%;
+  position: relative;
+  color: #000;
+}
+main .projectTitleBox {
+  position: absolute;
+  bottom: 11%;
+  left: 5%;
+}
+main .projectTitle {
+}
+main .projectTitle h2 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+main .projectTitle h3 {
+  font-family: "NotoSans", 돋움, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+main .SubTitle_Box {
+  display: flex;
+  margin-top: 6%;
+}
+main .SubTitle_Box p {
+  font-size: 1.1rem;
+  font-family: "NotoSans", 돋움, sans-serif;
+  font-weight: 500;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 2%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main .SubTitle_Box p:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* section */
+section {
+  width: 100%;
+  /* height: 2200px; */
+  position: relative;
+  /* background-color: #fff; */
+  box-sizing: border-box;
+}
+.bg_container {
+  /* width: 100%;
+  height: 100vh;
+  background: fixed url(/common/images/object/articleBackground_1920.png)
+    no-repeat 50% / cover; */
+}
+.part {
+  width: 80vw; height: 80vh;
+  display: flex;
+  position: sticky;
+  justify-content: flex-start;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.part:nth-child(n + 4) {
+  border-bottom: none;
+}
+.part .title {
+  margin-right: 18%;
+  width: 324px;
+  text-align: center;
+}
+.ProjectTitle {
+  margin-top: 15%;
+}
+.part .title h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  border: 1.5px solid #000;
+  border-radius: 80%;
+  padding: 0 35px;
+  height: 106px;
+  line-height: 106px;
+}
+.mentionBox {
+  margin-top: 15%;
+}
+.mentionBox .mention {
+  margin-top: 7%;
+  font-family: "NotoSans", 돋움, sans-serif;
+}
+.mentionBox .mention h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.mentionBox .mention p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 2%;
+  line-height: 1.6;
+}
+.box {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  font-family: "NotoSans", 돋움, sans-serif;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #333;
+  padding: 0 45px;
+}
+.box_1:first-child {
+  padding-left: 0;
+}
+.box_1:last-child {
+  border: 0;
+}
+.box_1 h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.box_1 p {
+  margin-top: 5%;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.Project_img_1 {
+  width: 100%; height: 140vh;
+  background: url(../images/project/CABBAGE_PACKAGE_2.png) no-repeat top / cover;}
+
+
+/* footer */
+footer {
+  background-color: #000;
+  color: #fff;
+
+  width: 100%;
+  height: 20vh;
+  padding: 40px 70px;
+  color: #b5b5b5;
+  box-sizing: border-box;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  /* height: 300px; */
+  position: relative;
+}
+.wishList_prev {
+  width: 50%;
+  background: url(../images/project/NARULERA_3.png) no-repeat 50% / cover;
+  height: 20vw;
+}
+.wishList_prev a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2.4rem;
+  color: #ffffff6c;
+}
+.prev_title {
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s;
+}
+.wishList_prev a:hover .prev_title {
+  transform: translateY(-10px);
+}
+.prev_title h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #a8a8a8;
+}
+.prev_title h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "NotoSans", 돋움, sans-serif;
+}
+.wishList_prev a::after,
+.wishList_next a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background 0.3s;
+}
+.wishList_prev a:hover,
+.wishList_next a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  color: #ffffff;
+}
+.next_title {
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s;
+}
+.wishList_next a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2.4rem;
+  color: #ffffff6c;
+}
+.wishList_next {
+  width: 50vw;
+  height: 20vw;
+  background: url(../images/project/CELINA.png) no-repeat left center / cover;
+}
+.next_title h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #a8a8a8;
+}
+.next_title h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "NotoSans", 돋움, sans-serif;
+}
+.wishList_next a:hover .next_title {
+  transform: translateY(-10px);
+}
+/* .footerTitle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+
+} */
+.footerMain_font {
+  display: flex;
+  align-items: flex-end;
+}
+footer .copy {
+  margin-top: 40px;
+  /* border-top: 1px solid #333; */
+  width: 100%;
+  text-align: right;
+}
+footer h3 {
+  font-size: 2rem;
+  margin-right: auto;
+  font-weight: 500;
+}
+footer p {
+  font-family: "NotoSans", 돋움, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+footer p:nth-child(1) {
+  margin-bottom: 40px;
+}
+.footerMg {
+  margin-right: 100px;
+}
+
+span {font-weight: 500;}

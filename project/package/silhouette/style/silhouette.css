@@ -145,7 +145,7 @@ section {
     no-repeat 50% / cover; */
 }
 .part {
-  width: 80vw; height: 100vh;
+  width: 80vw; height: 95vh;
   display: flex;
   position: sticky;
   justify-content: flex-start;
