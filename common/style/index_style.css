@@ -1095,3 +1095,10 @@ footer p:nth-child(1) {
   transform: translateY(0);
   opacity: 1;
 }
+
+
+.swiper-slide > .bk {
+  color: #000;
+}
+.swiper-slide > .bk > .projectItmBox > .projectItm {
+  border-color: #000;}

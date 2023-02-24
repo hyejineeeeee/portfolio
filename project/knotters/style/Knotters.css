@@ -125,8 +125,8 @@ main .SubTitle_Box p {
   transition: 0.5s;
 }
 main .SubTitle_Box p:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #FFF;
+  color: #000;
 }
 
 /* section */
