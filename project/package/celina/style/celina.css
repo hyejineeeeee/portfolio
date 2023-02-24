@@ -85,7 +85,7 @@ header .Menu li:nth-child(4) {
 main {
   width: 100%;
   height: 100vh;
-  background: url(../images/project/CABBAGE_PACKAGE_1.png) no-repeat top right / 150%;
+  background: url(../images/project/CELINA.png) no-repeat 50% / cover;
   position: relative;
   color: #000;
 }
@@ -218,9 +218,6 @@ section {
   font-size: 1rem;
   font-weight: 300;
 }
-.Project_img_1 {
-  width: 100%; height: 140vh;
-  background: url(../images/project/CABBAGE_PACKAGE_2.png) no-repeat top / cover;}
 
 
 /* footer */
@@ -244,7 +241,7 @@ footer {
 }
 .wishList_prev {
   width: 50%;
-  background: url(../images/project/NARULERA_3.png) no-repeat 50% / cover;
+  background: url(../images/project/CABBAGE_PACKAGE_2.png) no-repeat 40% / cover;
   height: 20vw;
 }
 .wishList_prev a {
@@ -315,7 +312,7 @@ footer {
 .wishList_next {
   width: 50vw;
   height: 20vw;
-  background: url(../images/project/CELINA.png) no-repeat left center / cover;
+  background: url(../images/project/실루엣패키지VER2.png) no-repeat left center / cover;
 }
 .next_title h3 {
   font-size: 2rem;
