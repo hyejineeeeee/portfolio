@@ -899,6 +899,8 @@ img.contact_Logo {
 }
 .contactBox {
   width: 35vw;
+  display: flex;
+  flex-direction: column;
 }
 .contactBackgroundFlex {
   display: flex;
